@@ -5,7 +5,16 @@ body {
     /* background-image: linear-gradient(to right,rgb(252, 71, 110),rgb(238, 211, 215) ); */
 }
 
-#Footer {
+.footer {
+    background-color: rgba(0, 0, 0, 0.938);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-copyright{
     background-color: rgba(0, 0, 0, 0.938);
     color: rgb(255, 255, 255);
     width: 100%;
@@ -29,25 +38,10 @@ body {
     text-decoration: none;
 }
 
-
-
-
 /*------------------------- Fim footer --------------------------------*/
 
 
 /* footer social icons */
-
-ul.social-network {
-    list-style: none;
-    display: inline;
-    padding: 0;
-}
-
-ul.social-network li {
-    display: inline;
-    margin: 0;
-    padding: 5px;
-}
 
 .faFacebook,
 .faYoutube,
@@ -66,3 +60,5 @@ ul.social-network li {
 .faInstagram:hover {
     color: #C13584;
 }
+
+/*------------------------- Fim footer social icons --------------------------------*/
