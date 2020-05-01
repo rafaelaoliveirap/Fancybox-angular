@@ -1,0 +1,68 @@
+/*-------------------------------- Inicio footer ------------------------------*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* background-image: linear-gradient(to right,rgb(252, 71, 110),rgb(238, 211, 215) ); */
+}
+
+#Footer {
+    background-color: rgba(0, 0, 0, 0.938);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+#btBox {
+    background-color: rgb(252, 71, 110);
+    color: white;
+    margin-right: 10px;
+}
+
+#btBox:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: rgb(241, 113, 141);
+    transition: ease-in-out color .15s;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*------------------------- Fim footer --------------------------------*/
+
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.faFacebook,
+.faYoutube,
+.faInstagram {
+    color: white;
+}
+
+.faFacebook:hover {
+    color: #3b5998;
+}
+
+.faYoutube:hover {
+    color: #b61919;
+}
+
+.faInstagram:hover {
+    color: #C13584;
+}

@@ -1,0 +1,67 @@
+/*-------------------- Inicio NAVBAR-------------- */
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* background-image: linear-gradient(to right,rgb(252, 71, 110),rgb(238, 211, 215) ); */
+}
+
+nav {
+    background-color: rgb(78, 78, 78);
+}
+
+.textoNav {
+    background-color: rgba(0, 0, 0, 0.897);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.textoNav a {
+    color: white;
+    transition: ease-in-out color .15s;
+}
+
+.textoNav a:hover {
+    color: rgb(224, 135, 205);
+    text-decoration: none
+}
+
+.containerM {
+    width: 80%;
+    justify-content: space-around;
+}
+
+.login-canto>button {
+    margin-right: 50px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#botao {
+    background-color: rgb(252, 71, 110);
+}
+
+#btBox {
+    background-color: rgb(252, 71, 110);
+    color: white;
+    margin-right: 10px;
+}
+
+#btBox:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: rgb(241, 113, 141);
+    transition: ease-in-out color .15s;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ------------------FINAL NAVBAR ------------------*/
