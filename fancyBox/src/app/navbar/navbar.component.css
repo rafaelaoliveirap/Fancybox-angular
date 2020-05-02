@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-    background-color: rgb(78, 78, 78);
+    background-color: white;
 }
 
 #botao {
@@ -28,13 +28,13 @@ nav {
     text-decoration: none;
 }
 .textoNav {
-    background-color: rgba(0, 0, 0, 0.897);
+    background-color: white;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
 .textoNav a {
-    color: white;
+    color: rgb(17, 10, 10);
     transition: ease-in-out color .15s;
 }
 

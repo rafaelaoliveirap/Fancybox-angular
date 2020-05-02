@@ -6,8 +6,8 @@ body {
 }
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.938);
-    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.938);
+    color: rgb(3, 2, 2);
     width: 100%;
     text-align: center;
     position: relative;
@@ -15,8 +15,8 @@ body {
 }
 
 .footer-copyright{
-    background-color: rgba(0, 0, 0, 0.938);
-    color: rgb(255, 255, 255);
+    background-color: white;
+    color: rgb(12, 8, 8);
     width: 100%;
     text-align: center;
     position: relative;
@@ -46,7 +46,7 @@ body {
 .faFacebook,
 .faYoutube,
 .faInstagram {
-    color: white;
+    color: black;
 }
 
 .faFacebook:hover {
