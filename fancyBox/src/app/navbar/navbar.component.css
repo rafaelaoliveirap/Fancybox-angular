@@ -9,6 +9,24 @@ nav {
     background-color: rgb(78, 78, 78);
 }
 
+#botao {
+    background-color: rgb(252, 71, 110);
+}
+
+#btBox {
+    background-color: rgb(252, 71, 110);
+    color: white;
+    margin-right: 10px;
+}
+
+#btBox:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    background-color: rgb(241, 113, 141);
+    transition: ease-in-out color .15s;
+    color: white;
+    text-decoration: none;
+}
 .textoNav {
     background-color: rgba(0, 0, 0, 0.897);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -44,24 +62,6 @@ nav {
     justify-content: space-around;
 }
 
-#botao {
-    background-color: rgb(252, 71, 110);
-}
-
-#btBox {
-    background-color: rgb(252, 71, 110);
-    color: white;
-    margin-right: 10px;
-}
-
-#btBox:hover {
-    cursor: pointer;
-    transform: translateY(-2px);
-    background-color: rgb(241, 113, 141);
-    transition: ease-in-out color .15s;
-    color: white;
-    text-decoration: none;
-}
 
 
 /* ------------------FINAL NAVBAR ------------------*/
