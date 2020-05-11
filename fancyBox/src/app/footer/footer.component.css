@@ -6,21 +6,9 @@ body {
 }
 
 .footer {
-    background-color: rgba(255, 255, 255, 0.938);
-    color: rgb(3, 2, 2);
-    width: 100%;
-    text-align: center;
-    position: relative;
+    position: sticky;
     bottom: 0;
-}
-
-.footer-copyright{
-    background-color: white;
-    color: rgb(12, 8, 8);
-    width: 100%;
-    text-align: center;
-    position: relative;
-    bottom: 0;
+    left: 0;
 }
 
 #btBox {
