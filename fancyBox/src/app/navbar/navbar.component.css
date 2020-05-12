@@ -9,6 +9,10 @@ nav {
     background-color: white;
 }
 
+.navbar {
+    display: flex;
+}
+
 #botao {
     background-color: rgb(252, 71, 110);
 }
@@ -27,6 +31,7 @@ nav {
     color: white;
     text-decoration: none;
 }
+
 .textoNav {
     background-color: white;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -61,7 +66,6 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 
 
 /* ------------------FINAL NAVBAR ------------------*/

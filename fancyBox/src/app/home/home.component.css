@@ -2,7 +2,7 @@
     height: 87vh;
 }
 
-@media(max-width:756px) {
+@media(max-width:856px) {
     .tamanho {
         width: 100%;
         height: 100%;
