@@ -1,1 +1,17 @@
+.tamanho {
+    height: 87vh;
+}
 
+@media(max-width:756px) {
+    .tamanho {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */

@@ -6,11 +6,9 @@
     margin: 0;
 }
 
-
-/* 
-hr {
+.linha {
     box-shadow: 0px 2px 3px 1px rgb(216, 113, 185);
-} */
+}
 
 .imgSobre {
     width: 250px;
@@ -18,13 +16,7 @@ hr {
     border-radius: 50%;
 }
 
-.parallax {
-    background-image: url(../../assets/img/branco.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
-}
+.parallax {}
 
 @media(max-width:670px) {
     .parallax>.container-fluid {
