@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FaqComponent } from './faq/faq.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
+import { PoliticasComponent } from './politicas/politicas.component';
+import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
     HomeComponent,
     ContatoComponent,
     FaqComponent,
-    ParceirosComponent
+    ParceirosComponent,
+    PoliticasComponent,
+    TermosDeUsoComponent
   ],
   imports: [
     BrowserModule,

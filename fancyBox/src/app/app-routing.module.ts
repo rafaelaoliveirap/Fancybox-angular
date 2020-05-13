@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FaqComponent } from './faq/faq.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
+import { PoliticasComponent } from './politicas/politicas.component';
+import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 
 
 const routes: Routes = [
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path: 'sobre-nos', component: SobreNosComponent},
   {path: 'contato', component: ContatoComponent},
   {path: 'faq', component: FaqComponent},
-  {path: 'parceiros', component: ParceirosComponent}
+  {path: 'parceiros', component: ParceirosComponent},
+  {path: 'politicas', component: PoliticasComponent},
+  {path: 'termos-de-uso', component: TermosDeUsoComponent}
 ];
 
 @NgModule({
