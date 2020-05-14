@@ -13,6 +13,10 @@ import { FaqComponent } from './faq/faq.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CadastroComponent } from './cadastro/cadastro.component';
+
+
 
 @NgModule({
   declarations: [
@@ -25,12 +29,15 @@ import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
     FaqComponent,
     ParceirosComponent,
     PoliticasComponent,
-    TermosDeUsoComponent
+    TermosDeUsoComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
