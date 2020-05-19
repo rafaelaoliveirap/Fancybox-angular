@@ -31,7 +31,8 @@ export class CadastrarUsuariosComponent implements OnInit {
      
     }else {
       alert("Senha incompátivel")
-      
+      document.getElementById("confirmaSenha").style.borderColor="red";
+        
     }
   }
 
@@ -42,6 +43,7 @@ export class CadastrarUsuariosComponent implements OnInit {
     })
   }
 
+ 
 
 
 

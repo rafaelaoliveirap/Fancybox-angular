@@ -21,10 +21,10 @@
 
     <div class="form-group">
         <label for="exampleCheck1">Confirme a senha</label>
-        <input type="password" class="form-control" placeholder="Confirme a senha" id="confirmaSenha" [(ngModel)]="data.confirmaSenha">
+        <input type="password" onfocus="this.value='';" class="form-control" value="#confirmaSenha" placeholder="Confirme a senha" id="confirmaSenha" [(ngModel)]="data.confirmaSenha">
 
     </div>
 
-    <button type="submit" class="btn btn-primary" (click)="validarSenha()">Cadastrar</button>
+    <button type=" submit " class="btn btn-primary " (click)="validarSenha() ">Cadastrar</button>
 
 </div>
