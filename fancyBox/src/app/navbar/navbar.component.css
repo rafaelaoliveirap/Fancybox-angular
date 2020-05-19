@@ -31,7 +31,10 @@ nav {
     color: white;
     text-decoration: none;
 }
-
+.textoNav a:hover{
+    color: rgb(114, 169 ,241);
+    text-decoration: none;
+}
 .containerM {
     width: 80%;
     justify-content: space-around;
