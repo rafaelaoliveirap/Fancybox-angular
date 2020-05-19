@@ -1,0 +1,30 @@
+<div class="container-fluid w-50 my-5">
+
+    <div class="form-group">
+        <label>Nome</label>
+        <input type="text" class="form-control" placeholder="Insira o nome" required [(ngModel)]="usuario.nome">
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Insira seu email" id="email" [(ngModel)]="usuario.email">
+    </div>
+
+
+
+
+    <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" class="form-control" placeholder="Insira sua senha" id="senha" [(ngModel)]="usuario.senha" [(ngModel)]="data.senha">
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleCheck1">Confirme a senha</label>
+        <input type="password" class="form-control" placeholder="Confirme a senha" id="confirmaSenha" [(ngModel)]="data.confirmaSenha">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="validarSenha()">Cadastrar</button>
+
+</div>

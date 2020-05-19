@@ -1,19 +1,19 @@
 <table id="tabela" class="table table-dark mx-auto my-5">
     <thead>
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Email</th>
-        <th scope="col">Senha</th>
-      </tr>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Senha</th>
+        </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let usuario of listaUsuarios">
-        <th scope="row">{{usuario.id}}</th>
-        <td>{{usuario.nome}}</td>
-        <td>{{usuario.email}}</td>
-        <td>{{usuario.senha}}</td>
-      </tr>
-      
+        <tr *ngFor="let usuario of listaUsuarios">
+            <th scope="row">{{usuario.id}}</th>
+            <td>{{usuario.nome}}</td>
+            <td>{{usuario.email}}</td>
+            <td>{{usuario.senha}}</td>
+        </tr>
+
     </tbody>
-  </table>
+</table>

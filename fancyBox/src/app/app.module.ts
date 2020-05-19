@@ -15,6 +15,8 @@ import { PoliticasComponent } from './politicas/politicas.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -30,13 +32,15 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     ParceirosComponent,
     PoliticasComponent,
     TermosDeUsoComponent,
-    CadastroComponent
+    CadastroComponent,
+    CadastrarUsuariosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    FormsModule
     
   ],
   providers: [],

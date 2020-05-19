@@ -10,6 +10,7 @@ import { FaqComponent } from './faq/faq.component';
 import { ParceirosComponent } from './parceiros/parceiros.component';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
+import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'parceiros', component: ParceirosComponent},
   {path: 'politicas', component: PoliticasComponent},
   {path: 'termos-de-uso', component: TermosDeUsoComponent},
-  {path: 'cadastro', component: CadastroComponent}
+  {path: 'cadastro', component: CadastroComponent},
+  {path: 'cadastrar-usuarios', component: CadastrarUsuariosComponent}
 ];
 
 @NgModule({

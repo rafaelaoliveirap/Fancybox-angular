@@ -26,26 +26,10 @@ nav {
 #btBox:hover {
     cursor: pointer;
     transform: translateY(-2px);
-    background-color:rgb(248, 143, 143);
+    background-color: rgb(248, 143, 143);
     transition: ease-in-out color .15s;
     color: white;
     text-decoration: none;
-}
-
-.textoNav {
-    background-color: white;
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-}
-
-.textoNav a {
-    color: rgb(17, 10, 10);
-    transition: ease-in-out color .15s;
-}
-
-.textoNav a:hover {
-    color: rgb(114, 169, 241);
-    text-decoration: none
 }
 
 .containerM {
@@ -62,9 +46,14 @@ nav {
     align-items: center;
 }
 
-.flex-wrap {
-    flex-wrap: wrap;
-    justify-content: space-around;
+@media(max-width:750px) {
+    nav>img {
+        display: none;
+    }
+    #btBox {
+        display: none;
+        padding: 0;
+    }
 }
 
 

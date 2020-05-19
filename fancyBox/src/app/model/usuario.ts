@@ -1,6 +1,6 @@
 export class Usuario{
-    public id = Number
-    public nome = String
-    public email = String
-    public senha = String
+    public id: Number
+    public nome: string
+    public email: string
+    public senha: string
 }
