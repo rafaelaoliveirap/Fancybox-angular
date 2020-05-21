@@ -1,7 +1,9 @@
-.tamanho {
+.tamanhoCarousel {
     height: 87vh;
 }
-
+.tamanhoDepoimentos{
+    height: 90vh;
+}
 
 
 @media(max-width:856px) {
