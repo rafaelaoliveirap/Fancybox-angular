@@ -7,7 +7,7 @@
     }
     
     hr {
-        background-color: rgb(209, 59, 84);
+        background-color:  #DEF481
     }
     
     .linha {
@@ -83,3 +83,4 @@
         color: white;
         transform: rotateY(180deg);
     }
+   

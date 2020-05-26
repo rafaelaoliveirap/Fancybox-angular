@@ -1,12 +1,19 @@
-* {
-    font-family: Americana Boldby Tilde;
-}
+
 
 hr {
-    background-color: rgb(209, 59, 84);
+    background-color:  rgb(114, 169 ,241);
 }
 
 div>p {
     margin: 0;
     padding: 0;
+}
+#formulario{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container-fluid{
+    background-color: rgba(114, 169, 241, 0.089);
 }
