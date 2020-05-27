@@ -1,10 +1,45 @@
 .tamanhoCarousel {
-    height: 87vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .tamanhoDepoimentos{
-    height: 90vh;
+    height: 86vh;
 }
+.card-img-top{
+    width: 15vw;
+    height: 28vh;
+}
+.parallax{
+    background-image: url('https://i.imgur.com/TzhiGgU.png');
+    min-height: 280px;
+    background-attachment: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.parallax1{
+    background-image: url('https://i.imgur.com/hqFVqCy.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background-image: url('https://i.imgur.com/j4vgES9.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagemHome{
+    height: 40vh;
+    width: 100vw;
 
+}
 
 @media(max-width:856px) {
     .tamanho {
