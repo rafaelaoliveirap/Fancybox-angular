@@ -15,6 +15,7 @@
             <td>{{usuario.email}}</td>
             <td>{{usuario.senha}}</td>
             <td><button type="button" class="btn btn-info" [routerLink]="['/editar-usuario',usuario.id]">Editar</button></td>
+            <td><button type="button" class="btn btn-danger" [routerLink]="['/deletar-usuario',usuario.id]">Deletar</button></td>
             
         </tr>
         
