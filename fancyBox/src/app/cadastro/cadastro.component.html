@@ -5,6 +5,7 @@
             <th scope="col">Nome</th>
             <th scope="col">Email</th>
             <th scope="col">Senha</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -13,7 +14,14 @@
             <td>{{usuario.nome}}</td>
             <td>{{usuario.email}}</td>
             <td>{{usuario.senha}}</td>
+            <td><button type="button" class="btn btn-info" [routerLink]="['/editar-usuario',usuario.id]">Editar</button></td>
+            
         </tr>
+        
+     
 
     </tbody>
+
+    
+
 </table>

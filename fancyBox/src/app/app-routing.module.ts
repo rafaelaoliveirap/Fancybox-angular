@@ -11,6 +11,7 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'politicas', component: PoliticasComponent},
   {path: 'termos-de-uso', component: TermosDeUsoComponent},
   {path: 'cadastro', component: CadastroComponent},
-  {path: 'cadastrar-usuarios', component: CadastrarUsuariosComponent}
+  {path: 'cadastrar-usuarios', component: CadastrarUsuariosComponent},
+  {path: 'editar-usuario/:id', component: EditarUsuarioComponent}
 ];
 
 @NgModule({

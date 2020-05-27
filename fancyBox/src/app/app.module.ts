@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
 import { FormsModule } from '@angular/forms';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 
 
 
@@ -33,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     PoliticasComponent,
     TermosDeUsoComponent,
     CadastroComponent,
-    CadastrarUsuariosComponent
+    CadastrarUsuariosComponent,
+    EditarUsuarioComponent
   ],
   imports: [
     BrowserModule,
