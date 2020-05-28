@@ -1,93 +1,104 @@
 .tamanhoCarousel {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
 .tamanhoDepoimentos {
-  height: 100vh;
+    height: 100vh;
 }
+
 .card-img-top {
-  width: 230px;
-  height: 210px;
+    width: 230px;
+    height: 210px;
 }
+
 .parallax {
-  max-width: 100%;
-  min-height: 55vh;
-  background-attachment: inherit;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    min-height: 100vh;
+    background-attachment: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .parallax1 {
-  background-image: url("https://i.imgur.com/hqFVqCy.png");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("https://i.imgur.com/hqFVqCy.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .parallax1Responsivo {
-  background-image: url("https://i.imgur.com/y5q4tct.png");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("https://i.imgur.com/y5q4tct.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax2 {
-  background-image: url("https://i.imgur.com/j4vgES9.png");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("https://i.imgur.com/j4vgES9.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .parallax2Responsivo {
-  background-image: url("https://i.imgur.com/22F6QNW.png");
-  min-height: 750px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("https://i.imgur.com/22F6QNW.png");
+    min-height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #imagemHome {
-  height: 40vh;
-  width: 100vw;
+    height: 40vh;
+    width: 100vw;
 }
 
 @media (max-width: 856px) {
-  .tamanho {
-    width: 100%;
-    height: 100%;
-  }
+    .tamanho {
+        width: 100%;
+        height: 100%;
+    }
 }
+
 @media (max-width: 1041px) {
-  .tamanhoCarousel {
-    display: none;
-  }
+    .tamanhoCarousel {
+        display: none;
+    }
 }
+
 @media (max-width: 1166px) {
-  .parallax1 {
-    display: none;
-  }
-  .parallax2 {
-    display: none;
-  }
+    .parallax1 {
+        display: none;
+    }
+    .parallax2 {
+        display: none;
+    }
 }
+
 @media (min-width: 1042px) {
-  .carouselResponsivo {
-    display: none;
-  }
+    .carouselResponsivo {
+        display: none;
+    }
 }
+
 @media (min-width: 1167px) {
-  .parallax1Responsivo {
-    display: none;
-  }
-  .parallax2Responsivo {
-    display: none;
-  }
+    .parallax1Responsivo {
+        display: none;
+    }
+    .parallax2Responsivo {
+        display: none;
+    }
 }
+
 
 /* * {
     box-sizing: border-box;
