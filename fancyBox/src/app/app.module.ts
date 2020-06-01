@@ -19,6 +19,7 @@ import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuar
 import { FormsModule } from '@angular/forms';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -37,7 +38,8 @@ import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.compo
     CadastroComponent,
     CadastrarUsuariosComponent,
     EditarUsuarioComponent,
-    DeletarUsuarioComponent
+    DeletarUsuarioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

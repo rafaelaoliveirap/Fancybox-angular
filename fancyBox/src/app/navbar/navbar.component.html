@@ -37,7 +37,9 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link " routerLink="/cadastrar-usuarios" aria-disabled="true">Cadastre-se</a>
+                        <a class="nav-link "aria-disabled="true"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" (click)="exibirLogin()">Login</a>
+                       
+
                     </li>
                 </ul>
             </div>
@@ -50,6 +52,9 @@
 
 </div>
 
+<div *ngIf="mostrarLogin">
+    <app-login></app-login>
+</div>
 
 
 
@@ -59,49 +64,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="container-ls shadow" style="background-color:white;">
-
-    <nav class="textoNav flex jutify-content-between sticky-top py-1">
-
-        <div class="containerM flex">
-            <!-- "py-2 d-none"  ela esconde o conteúdo -->
-<!-- <a class="py-2" routerLink="/home" aria-label="Product">
-                <svg xmlns="" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false">
-            <title>Fancybox</title>
-            <circle cx="12" cy="12" r="10" />
-            <path
-              d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-          </svg>
-            </a>
-
-            <a class="d-md-inline-block" routerLink="/home">Inicio</a>
-            <a class="d-md-inline-block" routerLink="/sobre-nos">Sobre nós</a>
-            <a class="d-md-inline-block" routerLink="/parceiros">Parceiros</a>
-            <a class="d-md-inline-block" routerLink="/contato">Contato</a>
-            <a class="d-md-inline-block" routerLink="/faq">FAQ</a>
-            <a></a>
-            <a></a>
-        </div>
-
-        <div class="flex login-canto">
-            <a id="btBox" class="btn d-md-inline-block" routerLink="cadastro.html"> MONTE SUA BOX</a>
-            <a></a>
-            <a class="d-md-inline-block" href="/">Login</a>
-        </div>
-
-    </nav>
-</div> -->
 
 <!-- ---------------------------- FIM NAVBAR------------------------------------ -->

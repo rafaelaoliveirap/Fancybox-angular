@@ -13,6 +13,7 @@ import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path: 'cadastro', component: CadastroComponent},
   {path: 'cadastrar-usuarios', component: CadastrarUsuariosComponent},
   {path: 'editar-usuario/:id', component: EditarUsuarioComponent},
-  {path: 'deletar-usuario/:id', component: DeletarUsuarioComponent}
+  {path: 'deletar-usuario/:id', component: DeletarUsuarioComponent},
+  {path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
