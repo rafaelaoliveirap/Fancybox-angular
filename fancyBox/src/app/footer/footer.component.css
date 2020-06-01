@@ -4,7 +4,13 @@ body {
     font-family: 'Inter', sans-serif;
     /* background-image: linear-gradient(to right,rgb(252, 71, 110),rgb(238, 211, 215) ); */
 }
-
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(114, 169, 241);
+}
 .footer {
     position: sticky;
     bottom: 0;
@@ -12,7 +18,7 @@ body {
 }
 
 #btBox {
-    background-color: rgb(228, 108, 108);
+    background-color: rgb(114, 169, 241);
     color: white;
     margin-right: 10px;
 }
@@ -20,7 +26,8 @@ body {
 #btBox:hover {
     cursor: pointer;
     transform: translateY(-2px);
-    background-color: rgb(241, 113, 141);
+    /*Cor esmaecida*/
+    background-color: rgb(167, 199, 240);
     transition: ease-in-out color .15s;
     color: white;
     text-decoration: none;
