@@ -1,0 +1,74 @@
+<section class="container-fluid">
+    <h2 class="pt-5 pb-2 text-black text-center ">Faça sua doação</h2>
+    
+    <hr class="mx-auto col-9 col-md-4 col-lg-3 py-1">
+    
+    <div class="row">
+        
+        <div class="col-12 col-lg-7 mt-4 ">
+            
+            <div class="row d-flex justify-content-center ">
+
+                <div class="col-10 col-md-6 col-lg-8  py-5 shadow mb-5 " id="formulario">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Instituições</label>
+                        <select class="custom-select">
+                            <option selected>Selecione a instituição</option>
+                            <option value="1">Hope</option>
+                            <option value="2">Proud</option>
+                            <option value="3">Corredoras</option>
+                            <option value="3">Freedom</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Valor</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite o valor">
+                    </div>
+                    
+                    <div class="d-flex justify-content-around">
+                        <fa-icon [icon]="faBarcode" class="faBarcode fa-2x p-3"></fa-icon>
+                        <fa-icon [icon]="faCreditCard" class="faCreditCard fa-2x p-3"></fa-icon>
+                        
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <input type="radio" id="boleto" name="formaPag" value="boleto">
+                        <label for="boleto">Gerar boleto</label><br>
+                        <input type="radio" id="cartao" name="formaPag" value="cartao">
+                        <label for="cartao">Pagar com cartão</label><br>
+                    </div>
+                    
+                    <div class="d-flex justify-content-end mt-5">
+                        <button class="btn btn-outline-dark w-25 shadow rounded" data-toggle="modal" (click)="exibirLogin()"  data-target="#exampleModal" >Doar</button>
+                    </div>
+                 
+
+                </div>
+
+            </div> 
+
+        </div>
+        
+        <div class="col-12 col-lg-5 mb-5 mt-5">
+            <div class="d-flex justify-content-around mb-5">
+                <img src="https://i.imgur.com/DwDAMm6.png" class="img-fluid  rounded-circle w-25 h-25" alt="Hope-logo">
+                <img src="https://i.imgur.com/AezT3vM.png" class="img-fluid  rounded-circle w-25" alt="Proud-logo">
+            </div>
+         
+            <div class="d-flex justify-content-around mb-5">
+             
+            </div>
+
+            <div class="d-flex justify-content-around mb-5 mt-5">
+                <img src="https://i.imgur.com/ZCal7JC.png" class="img-fluid  rounded-circle w-25" alt="Corredoras-logo">
+                <img src="https://i.imgur.com/dreqe4t.png" class="img-fluid  rounded-circle w-25" alt="Freedom-logo">   
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+<div *ngIf="mostrarLogin">
+    <app-login></app-login>
+</div>

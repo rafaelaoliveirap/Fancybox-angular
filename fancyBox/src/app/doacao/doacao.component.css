@@ -1,0 +1,12 @@
+hr{
+    background-color: #E46C6C;
+}
+#formulario{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container-fluid{
+    background-color: rgba(114, 169, 241, 0.089);
+}

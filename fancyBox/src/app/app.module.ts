@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { LoginComponent } from './login/login.component';
+import { DoacaoComponent } from './doacao/doacao.component';
 
 
 
@@ -39,7 +40,8 @@ import { LoginComponent } from './login/login.component';
     CadastrarUsuariosComponent,
     EditarUsuarioComponent,
     DeletarUsuarioComponent,
-    LoginComponent
+    LoginComponent,
+    DoacaoComponent
   ],
   imports: [
     BrowserModule,

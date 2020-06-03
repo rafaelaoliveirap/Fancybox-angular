@@ -14,6 +14,7 @@ import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuar
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { LoginComponent } from './login/login.component';
+import { DoacaoComponent } from './doacao/doacao.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,8 @@ const routes: Routes = [
   {path: 'cadastrar-usuarios', component: CadastrarUsuariosComponent},
   {path: 'editar-usuario/:id', component: EditarUsuarioComponent},
   {path: 'deletar-usuario/:id', component: DeletarUsuarioComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'doacao', component: DoacaoComponent}
 ];
 
 @NgModule({
