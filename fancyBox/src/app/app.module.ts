@@ -21,7 +21,7 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { LoginComponent } from './login/login.component';
 import { DoacaoComponent } from './doacao/doacao.component';
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 @NgModule({
@@ -48,7 +48,8 @@ import { DoacaoComponent } from './doacao/doacao.component';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ScrollToModule.forRoot()
     
   ],
   providers: [],
