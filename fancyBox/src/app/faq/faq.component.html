@@ -1,6 +1,6 @@
 <!-- Inicio do FAQ -->
-<section class="border-0 ">
-    <h2 class="font-weight-bolder d-flex justify-content-center pt-5">
+<section class="container-lx border-0">
+    <h2 class="font-weight-bolder d-flex justify-content-center mt-4">
         Perguntas frequentes
     </h2>
 
@@ -10,15 +10,18 @@
 
         <div class="accordion" id="accordionExample">
             <div class="card">
-                <div class="card-header fundo text-center" id="headingOne">
+
+                <div class="card-header fundoBranco text-center" id="headingOne" [ngClass]="{'fundoVerde': janelaAberta1 == false} ">
 
                     <h2 class="mb-0 ">
-                        <button type="button" class="btn btn-link bt collapsed " data-toggle="collapse" data-target="#collapseOne"> COMO FAÇO PARA ME CADASTRAR?</button>
-                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseOne"></i>
+                        <button type="button" class="btn btn-link bt collapsed " data-toggle="collapse" data-target="#collapseOne" (click)="abrirJanela1()"> COMO FAÇO PARA ME CADASTRAR?<i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseOne"></i></button>
+
                     </h2>
+
                 </div>
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+
                     <div class="card-body">
                         <p> O cadastro é feito pela página de cadastros, onde se encontram as instruções de como prosseguir. <a routerLink="/cadastro" target="_blank">Clique aqui</a></p>
                     </div>
@@ -28,10 +31,10 @@
 
             <div class="card ">
 
-                <div class="card-header fundo" id="headingTwo">
+                <div class="card-header fundoBranco " id="headingTwo" [ngClass]="{'fundoVerde': janelaAberta2 == true} ">
                     <h2 class="mb-0 text-center">
-                        <button type="button" class="btn btn-link bt " data-toggle="collapse" data-target="#collapseTwo">VOCÊS POSSUEM LOJA FISÍCA?</button>
-                        <i class="fa fa-plus btn btn-link bt" data-toggle="collapse" data-target="#collapseTwo"></i>
+                        <button type="button" class="btn btn-link bt " data-toggle="collapse" data-target="#collapseTwo" (click)="abrirJanela2()">VOCÊS POSSUEM LOJA FISÍCA? <i class="fa fa-plus btn btn-link bt" data-toggle="collapse" data-target="#collapseTwo"></i></button>
+
                     </h2>
                 </div>
 
@@ -45,12 +48,12 @@
 
             <div class="card">
 
-                <div class="card-header fundo" id="headingThree">
+                <div class="card-header fundoBranco" id="headingThree" [ngClass]="{'fundoVerde': janelaAberta3 == true} ">
 
                     <h2 class="mb-0 text-center">
-                        <button type="button" class="btn btn-link bt" data-toggle="collapse" data-target="#collapseThree">
-                            QUAL O PRAZO DE ENTREGA?</button>
-                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseThree"></i>
+                        <button type="button" class="btn btn-link bt" data-toggle="collapse" data-target="#collapseThree" (click)="abrirJanela3()">
+                            QUAL O PRAZO DE ENTREGA?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseThree"></i></button>
+
                     </h2>
                 </div>
 
@@ -63,17 +66,17 @@
 
             <div class="card">
 
-                <div class="card-header fundo" id="headingFor">
+                <div class="card-header fundoBranco " id=" headingFive" [ngClass]="{'fundoVerde': janelaAberta4 == true} ">
 
-                    <h2 class="mb-0 text-center">
-                        <button type="button" class="btn btn-link bt" data-toggle="collapse" data-target="#collapseFor">
-                            VOCÊS COBRAM FRETE?</button>
-                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseFor"></i>
+                    <h2 class="mb-0 text-center ">
+                        <button type="button " class="btn btn-link bt " data-toggle="collapse " data-target="#collapseFive " (click)="abrirJanela4()">
+                            VOCÊS COBRAM FRETE? <i class="fa fa-plus btn btn-link bt " data-toggle="collapse " data-target="#collapseFor "></i></button>
+
                     </h2>
                 </div>
 
-                <div id="collapseFor" class="collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
-                    <div class="card-body">
+                <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordionExample ">
+                    <div class="card-body ">
                         <p> Sim, é cobrado uma pequena taxa dependendo do tipo de frete e da sua localização.</p>
                     </div>
                 </div>
