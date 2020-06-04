@@ -1,5 +1,13 @@
 .scrollspySite{
     position: relative;
     overflow: auto;
-    height: 885px;
+    height: 580px;
+}
+
+button {
+color: #000;
+}
+
+hr {
+    background-color: #DEF481
 }
