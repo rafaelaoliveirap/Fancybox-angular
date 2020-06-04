@@ -19,7 +19,6 @@ export class NavbarComponent implements OnInit {
   exibirLogin(){
     this.mostrarLogin=true;
     
-
   }
 }
 
