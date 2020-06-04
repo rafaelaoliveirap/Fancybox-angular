@@ -17,6 +17,7 @@
     background-attachment: inherit;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -49,7 +50,7 @@
 
 .parallax2Responsivo {
     background-image: url("https://i.imgur.com/ki83Cc5.png");
-    min-height: 750px;
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

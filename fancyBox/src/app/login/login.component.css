@@ -1,0 +1,15 @@
+button{
+   
+    background-color: rgba(228, 90, 90, 0.151);
+    border: 1px solid bisque;
+}
+a{
+  color: black;  
+}
+button:hover{
+
+    background-color: rgb(228, 90, 90);
+}
+.fundoLogin{
+    background-image: linear-gradient( to right, rgb(228, 108, 108) 25%, rgb(226, 152, 118), rgb(240, 212, 120) ); 
+}
