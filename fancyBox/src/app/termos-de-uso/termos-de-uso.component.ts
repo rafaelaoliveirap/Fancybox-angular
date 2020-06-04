@@ -14,7 +14,7 @@ export class TermosDeUsoComponent implements OnInit {
 
 
   ngOnInit(){
-    window.scroll(0,0)
+    window.scroll(0, 0)
   }
 
 }
