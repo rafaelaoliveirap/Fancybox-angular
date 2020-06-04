@@ -1,165 +1,180 @@
-<!-- Inicio do FAQ -->
-<section class="border-0 ">
-    <h2 class="font-weight-bolder d-flex justify-content-center pt-5">
-        Perguntas frequentes
-    </h2>
+<section class="container-fluid">
 
-    <hr class="d-flex mx-auto col-md-2 py-1" />
-
-    <div class="bs-example d-flex justify-content-center my-5">
+    <section class="d-flex justify-content-center my-5">
 
         <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header fundo text-center" id="headingOne">
 
-                    <h2 class="mb-0 ">
-                        <button type="button" class="btn btn-link bt collapsed " data-toggle="collapse" data-target="#collapseOne"> COMO FAÇO PARA ME CADASTRAR?</button>
-                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseOne"></i>
+
+            <div class="card">
+                <div class="card-header fundoBranco" id="headingOne" [ngClass]="{'fundoVerde': janelaAberta1 == false} ">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" (click)="abrirJanela1()">
+                        POSSO MONTAR MINHA BOX DA MANEIRA QUE EU QUISER?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseOne"></i>  </button>
                     </h2>
                 </div>
-
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p> O cadastro é feito pela página de cadastros, onde se encontram as instruções de como prosseguir. <a routerLink="/cadastro" target="_blank">Clique aqui</a></p>
+                        Sim, selecione os itens desejados e coloque no seu carrinho e quando finalizar a compra será colocado em uma box para entrega.
+
                     </div>
                 </div>
-
             </div>
 
-            <div class="card ">
-
-                <div class="card-header fundo" id="headingTwo">
-                    <h2 class="mb-0 text-center">
-                        <button type="button" class="btn btn-link bt " data-toggle="collapse" data-target="#collapseTwo">VOCÊS POSSUEM LOJA FISÍCA?</button>
-                        <i class="fa fa-plus btn btn-link bt" data-toggle="collapse" data-target="#collapseTwo"></i>
+            <div class="card">
+                <div class="card-header fundoBranco" id="headingTwo" [ngClass]="{'fundoVerde': janelaAberta2 == true} ">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" (click)="abrirJanela2()">
+                            POSSO TROCAR ALGUM PRODUTO?<i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseTwo"></i>  </button>
                     </h2>
                 </div>
-
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p> Não, a nossa loja é um e-commerce, totalmente online e virtual.</p>
+                        Caso o produto não tenha sido aberto ou utilizado, podemos analisar individualmente a viabilidade da troca.
+
                     </div>
                 </div>
-
             </div>
 
+
             <div class="card">
-
-                <div class="card-header fundo" id="headingThree">
-
-                    <h2 class="mb-0 text-center">
-                        <button type="button" class="btn btn-link bt" data-toggle="collapse" data-target="#collapseThree">
-                            QUAL O PRAZO DE ENTREGA?</button>
-                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseThree"></i>
+                <div class="card-header fundoBranco" id="headingThree" [ngClass]="{'fundoVerde': janelaAberta3 == true} ">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" (click)="abrirJanela3()">
+                     QUAL O PRAZO DE ENTREGA?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseThree"></i>  </button>
                     </h2>
                 </div>
-
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p>O prazo é entre 2 a 3 dias úteis.</p>
+                        O prazo para entrega é entre 2 a 3 dias úteis.
+
                     </div>
                 </div>
             </div>
 
             <div class="card">
+                <div class="card-header fundoBranco" id="headingSeven" [ngClass]="{'fundoVerde': janelaAberta4 == true}">
 
-                <div class="card-header fundo" id="headingFor">
-
-                    <h2 class="mb-0 text-center">
-                        <button type="button" class="btn btn-link bt" data-toggle="collapse" data-target="#collapseFor">
-                            VOCÊS COBRAM FRETE?</button>
-                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseFor"></i>
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block bt" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" (click)="abrirJanela4()">
+                            COMO FAÇO PARA ME CADASTRAR? <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseSeven"></i>
+                        </button>
                     </h2>
+
                 </div>
 
-                <div id="collapseFor" class="collapse" aria-labelledby="headingFor" data-parent="#accordionExample">
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p> Sim, é cobrado uma pequena taxa dependendo do tipo de frete e da sua localização.</p>
+                        O cadastro é feito pela página de cadastros, onde se encontram as instruções de como prosseguir. <a routerLink="/cadastro" target="_blank">Clique aqui</a>
                     </div>
                 </div>
             </div>
 
 
+            <div class="card">
+                <div class="card-header fundoBranco" id="headingFive" [ngClass]="{'fundoVerde': janelaAberta5 == true}">
+
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" (click)="abrirJanela5()">
+                        VOCÊS POSSUEM LOJA FISÍCA? <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseFive"></i>
+                        </button>
+                    </h2>
+
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Não, a nossa loja é um e-commerce, totalmente online e virtual.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header fundoBranco" id="headingSix" [ngClass]="{'fundoVerde': janelaAberta6 == true} ">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive" (click)="abrirJanela6()">
+                            POSSO CANCELAR UMA COMPRA?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseSix"></i>  </button>
+                    </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Sim, é possível cancelar uma compra, caso o produto ainda não tenha sido entregue.
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="card-header fundoBranco" id="headingFour" [ngClass]="{'fundoVerde': janelaAberta7 == true} ">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" (click)="abrirJanela7()">
+                            É COBRADO FRETE?<i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseFour"></i>  </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Sim, é cobrado uma pequena taxa dependendo do tipo de frete e da sua localização.
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="card">
+                <div class="card-header fundoBranco" id="headingSeven" [ngClass]="{'fundoVerde': janelaAberta7 == true} ">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" (click)="abrirJanela7()">
+                        POSSO MONTAR MINHA BOX DA MANEIRA QUE EU QUISER?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseSeven"></i>  </button>
+                    </h2>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Sim, selecione os itens desejados e coloque no seu carrinho e quando finalizar a compra será colocado em uma box para entrega.
+
+                    </div>
+                </div>
+            </div> -->
 
 
         </div>
-    </div>
-
+    </section>
 
 </section>
+
+
+<script>
+    //efeito do icone do FAQ 
+    $(document).ready(function() {
+
+        $(".collapse.show").each(function() {
+            $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+
+        $(".collapse").on('show.bs.collapse', function() {
+            $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function() {
+            $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- 
         
                
-            <div class="accordion pt-5 " id="accordionExample ">
-         
-           
-            </div>
-       
-        <div class="card ">
-            <div class=" faq card-header " id="headingFour ">
-                <h2 class="mb-0 ">
-                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse "
-                        data-target="#collapseFour " aria-expanded="false " aria-controls="collapseFour ">
-                        VOCÊS COBRAM FRETE?
-                        
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseFour " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                <div class="card-body ">
-                    Sim, há uma pequena taxa no frete para ajudar no custeamento
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class=" faq card-header " id="headingTwo ">
-                <h2 class="mb-0 ">
-                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse "
-                        data-target="#collapseFive " aria-expanded="false " aria-controls="collapseFive ">
-                        COMPRANDO HOJE, QUANDO RECEBEREI MEU PRODUTO?
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseFive " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                <div class="card-body ">
-                    Na data agendada
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class=" faq card-header " id="headingTwo ">
-                <h2 class="mb-0 ">
-                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse "
-                        data-target="#collapseSix " aria-expanded="false " aria-controls="collapseSix ">
-                        POSSO CANCELAR UMA COMPRA?
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseSix " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                <div class="card-body ">
-                    Sim, é possível cancelar uma compra, caso o produto ainda não tenha
-                    sido entregue.
-                    
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class=" faq card-header " id="headingTwo ">
-                <h2 class="mb-0 ">
-                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse "
-                        data-target="#collapseSeven " aria-expanded="false " aria-controls="collapseSeven ">
-                        O PEDIDO JA FOI ENTREGUE, POSSO TROCAR ALGUM PRODUTO?
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseSeven " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                <div class="card-body ">
-                    Caso o produto não tenha sido aberto ou utilizado, podemos analisar
-individualmente a viabilidade da troca.
-                </div>
-            </div>
-        </div>
+        
         <div class="card ">
             <div class=" faq card-header " id="headingTwo ">
                 <h2 class="mb-0 ">

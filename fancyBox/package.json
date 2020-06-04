@@ -24,7 +24,11 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
+<<<<<<< HEAD
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
+=======
+    "@types/jquery": "^3.3.38",
+>>>>>>> 86e9ccef8b01114af2a0a5f290f1f227eaa584d0
     "bootstrap": "^4.1.1",
     "jquery": "^3.4.1",
     "ng2-completer": "^9.0.1",
