@@ -86,6 +86,7 @@
 @media (min-width: 1042px) {
     .carouselResponsivo {
         display: none;
+       
     }
 }
 
@@ -100,3 +101,10 @@
         display: none;
     }
 }
+
+/* Depoimentos - Seta do fundo do Carrossel responsivo */
+.carouselResponsivo{
+
+    background-image: url('https://i.imgur.com/QyUnxvs.png');
+    background-position: center ;
+ }
