@@ -15,8 +15,8 @@
         height: 200px;
         border-radius: 75%;
     }
-    
-    @media(max-width:670px) {
+  
+   /* @media(max-width:670px) {
         .parallax>.container-fluid {
             width: 80%;
             margin: 0 auto;
@@ -25,7 +25,7 @@
             margin-bottom: 30px;
         }
     }
-    
+    */
     .flip-card {
         background-color: transparent;
         /* Remove this if you don't want the 3D effect */
@@ -75,3 +75,22 @@
         color: white;
         list-style-type: none;
     }
+@media (max-width: 700px) {
+
+    .desktop{
+        background-color: red;
+        display:none
+    }
+    .mobile{
+        align-items: center;
+        justify-content: center;
+    }        
+}
+@media (min-width: 701px) {
+
+    .mobile{
+        background-color: red;
+        display:none
+    }
+                
+}
