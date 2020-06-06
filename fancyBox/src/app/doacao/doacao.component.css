@@ -1,3 +1,13 @@
+ hr{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h2{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 hr{
     background-color: #E46C6C;
 }
