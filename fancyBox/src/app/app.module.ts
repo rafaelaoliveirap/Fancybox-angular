@@ -14,7 +14,7 @@ import { ParceirosComponent } from './parceiros/parceiros.component';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { TermosDeUsoComponent } from './termos-de-uso/termos-de-uso.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
 import { FormsModule } from '@angular/forms';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
@@ -37,7 +37,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
     ParceirosComponent,
     PoliticasComponent,
     TermosDeUsoComponent,
-    CadastroComponent,
+    UsuarioComponent,
     CadastrarUsuariosComponent,
     EditarUsuarioComponent,
     DeletarUsuarioComponent,

@@ -9,11 +9,6 @@ nav {
     background-color: white;
 }
 
-img {
-    width: 12vw;
-    height: 8vh;
-}
-
 #botao {
     background-color: #DEF481;
 }
@@ -56,10 +51,23 @@ img {
     align-items: center;
 }
 
-@media(max-width:750px) {
-    nav>img {
+@media (max-width: 576px) {
+    #logo {
         display: none;
     }
+    #logo2 {
+        width: 45vw;
+        height: 6vh;
+    }
+}
+
+@media (min-width: 577px) {
+    #logo2 {
+        display: none;
+    }
+}
+
+@media(max-width:750px) {
     #btBox {
         display: none;
         padding: 0;

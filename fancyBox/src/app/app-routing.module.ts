@@ -1,4 +1,4 @@
-import { CadastroComponent } from './cadastro/cadastro.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -29,7 +29,7 @@ const routes: Routes = [
   {path: 'parceiros', component: ParceirosComponent},
   {path: 'politicas', component: PoliticasComponent},
   {path: 'termos-de-uso', component: TermosDeUsoComponent},
-  {path: 'cadastro', component: CadastroComponent},
+  {path: 'usuario', component: UsuarioComponent},
   {path: 'cadastrar-usuarios', component: CadastrarUsuariosComponent},
   {path: 'editar-usuario/:id', component: EditarUsuarioComponent},
   {path: 'deletar-usuario/:id', component: DeletarUsuarioComponent},
