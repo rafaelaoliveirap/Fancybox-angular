@@ -20,8 +20,8 @@ export class CadastrarUsuariosComponent implements OnInit {
 
 
 
-  ngOnInit(): void {
-   
+  ngOnInit() {
+    window.scroll(0, 0)
   }
 
   validarSenha(){

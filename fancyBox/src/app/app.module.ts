@@ -22,6 +22,7 @@ import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.compo
 import { LoginComponent } from './login/login.component';
 import { DoacaoComponent } from './doacao/doacao.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     EditarUsuarioComponent,
     DeletarUsuarioComponent,
     LoginComponent,
-    DoacaoComponent
+    DoacaoComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,

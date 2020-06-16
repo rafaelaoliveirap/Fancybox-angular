@@ -1,0 +1,37 @@
+.head{
+    text-align: center;
+    background: rgb(228, 108, 108);
+    border-radius: 5em;
+    border: 1px solid;
+    padding: 12px;
+    display: block;
+}
+
+.filter-bar{
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-bar, li, a{
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    border-radius: 1em;
+    text-align: center;   
+}
+
+.filter-bar, li, a:hover:not(.header) {
+    background-color: #eee;
+    color: black;
+  }
+
+li{
+    background-color: white;
+    border: none;
+  }
