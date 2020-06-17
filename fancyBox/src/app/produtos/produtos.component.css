@@ -4,6 +4,14 @@ hr {
   padding: 0;
   margin: 0; 
 }
+.parallax{
+  background-image: url('https://i.imgur.com/Akpv9rY.jpg');
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .imagens-card{
   width: 200px;
@@ -24,6 +32,13 @@ hr {
   padding: 0;
   margin: 0;
 }
+#botao{
+  background-color: rgb(114, 169, 241);
+  color: white;
+}
+#botao:hover{
+  background-color: rgb(228, 108, 108);
+}
 
 .filter-bar, li, a{
     border: 1px solid #ddd;
@@ -39,7 +54,7 @@ hr {
 }
 
 .filter-bar, li, a:hover:not(.header) {
-    background-color: rgba(228, 108, 108, 0.299);
+    
     color: black;
     border: 1px solid #ddd;
   }
