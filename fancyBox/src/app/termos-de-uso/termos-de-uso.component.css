@@ -14,3 +14,21 @@ hr {
     padding: 0;
     margin: 0; 
 }
+
+#nav,#nav1,.mobile,.web{
+    margin: 0;
+    padding: 0;
+   
+}
+@media (max-width: 423px) {
+    .web {
+        display: none
+    }
+
+}
+
+@media (min-width: 424px) {
+    .mobile {
+        display: none
+    }
+}
