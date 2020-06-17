@@ -36,5 +36,13 @@ button:hover{
 .container-fluid{
     
     background-image: linear-gradient( to right, rgba(228, 108, 108, 0.294) 25%, rgba(177, 118, 226, 0.294), rgba(114, 169 ,241, 0.294) ) 
-
 }
+
+.possuiErro input {
+    border-color: rgb(255, 81, 81);
+  }
+  
+  .possuiErro ul {
+    color: red;
+    margin: 0;
+  }

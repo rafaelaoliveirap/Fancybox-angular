@@ -11,5 +11,5 @@ button:hover{
     background-color: rgb(228, 90, 90);
 }
 .fundoLogin{
-    background-image: linear-gradient( to right, rgb(228, 108, 108) 25%, rgb(226, 152, 118), rgb(240, 212, 120) ); 
+    background-image: linear-gradient( to right, rgba(228, 108, 108, 0.698) 25%, rgba(226, 152, 118, 0.698), rgba(240, 212, 120, 0.698) ); 
 }

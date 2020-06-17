@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contato } from '../model/Contato';
 
 @Component({
   selector: 'app-contato',
@@ -7,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatoComponent implements OnInit {
 
+  contato: Contato = new Contato();
+
   constructor() { }
+
+  email: string;
+  erroEmail: boolean = false;
 
   ngOnInit() {
     window.scroll(0, 0)
 
   }
-
+  
 }
