@@ -4,6 +4,9 @@ hr {
   padding: 0;
   margin: 0; 
 }
+.card{
+  background-color: rgba(255, 255, 255, 0.958);
+}
 .parallax{
   background-image: url('https://i.imgur.com/Akpv9rY.jpg');
   min-height: 300px;
@@ -39,11 +42,15 @@ hr {
 #botao:hover{
   background-color: rgb(228, 108, 108);
 }
+#fundoProduto{
+      
+    background-image: linear-gradient( to right, rgba(228, 108, 108, 0.434) 25%, rgba(226, 152, 118, 0.434), rgba(240, 212, 120, 0.434) );
+}
 
 .filter-bar, li, a{
     border: 1px solid #ddd;
     margin-top: -1px; /* Prevent double borders */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.658);
     padding: 11px;
     text-decoration: none;
     font-size: 18px;
@@ -59,6 +66,6 @@ hr {
     border: 1px solid #ddd;
   }
   li{
-    background-color: white;
+    background-color: transparent;
     border: none;
   }
