@@ -5,7 +5,7 @@ hr {
   margin: 0; 
 }
 .card{
-  background-color: rgba(255, 255, 255, 0.958);
+  background-color: rgba(255, 255, 255, 0.858);
 }
 .parallax{
   background-image: url('https://i.imgur.com/Akpv9rY.jpg');
@@ -44,7 +44,7 @@ hr {
 }
 #fundoProduto{
       
-    background-image: linear-gradient( to right, rgba(228, 108, 108, 0.434) 25%, rgba(226, 152, 118, 0.434), rgba(240, 212, 120, 0.434) );
+    background-image: linear-gradient( to right,  rgba(240, 212, 120, 0.434) 25%, rgba(216, 154, 72, 0.434), rgba(228, 108, 108, 0.434) );
 }
 
 .filter-bar, li, a{
