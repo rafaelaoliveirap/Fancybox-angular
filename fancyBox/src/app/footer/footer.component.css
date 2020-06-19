@@ -4,13 +4,16 @@ body {
     font-family: 'Inter', sans-serif;
     /* background-image: linear-gradient(to right,rgb(252, 71, 110),rgb(238, 211, 215) ); */
 }
-a{
+
+a {
     color: black;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: rgb(114, 169, 241);
 }
+
 .footer {
     position: sticky;
     bottom: 0;
@@ -32,6 +35,7 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+
 
 /*------------------------- Fim footer --------------------------------*/
 
@@ -56,4 +60,18 @@ a:hover{
     color: #C13584;
 }
 
+
 /*------------------------- Fim footer social icons --------------------------------*/
+
+@media(min-width: 1439px) {
+    h5,
+    ul>li {
+        font-size: 24px;
+    }
+    .fa-2x {
+        font-size: 3rem;
+    }
+    #btBox {
+        font-size: 25px;
+    }
+}

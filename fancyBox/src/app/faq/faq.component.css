@@ -1,5 +1,5 @@
-button {
-    font-size: 18px;
+.card-header {
+    width: 100%;
 }
 
 .faq {
@@ -12,11 +12,14 @@ hr {
 
 .card {
     border: none;
-    font-size: 17px;
 }
 
-.accordion {
-    width: 40%;
+.responsividadeMobile {
+    width: 100vw;
+}
+
+.responsividadeDesktop {
+    width: 30vw;
 }
 
 .bt {
@@ -33,4 +36,60 @@ hr {
 
 .fundoVerde {
     background-color: rgb(222, 244, 129);
+}
+
+@media(max-width: 767px) {
+    .responsividadeDesktop {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .responsividadeMobile {
+        display: none;
+    }
+    .responsividadeDesktop {
+        width: 60vw;
+    }
+}
+
+@media(min-width: 1024px) {
+    .responsividadeMobile {
+        display: none;
+    }
+    .responsividadeDesktop {
+        width: 50vw;
+    }
+    .tituloFAQ>h2 {
+        font-size: 40px;
+    }
+    .card-body {
+        font-size: 18px;
+    }
+    button,
+    i {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 1440px) {
+    app-navbar {
+        font-size: 80px;
+    }
+    .responsividadeMobile {
+        display: none;
+    }
+    .responsividadeDesktop {
+        width: 50vw;
+    }
+    .tituloFAQ>h2 {
+        font-size: 42px;
+    }
+    .card-body {
+        font-size: 22px;
+    }
+    button,
+    i {
+        font-size: 24px;
+    }
 }

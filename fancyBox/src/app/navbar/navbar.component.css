@@ -74,5 +74,14 @@ nav {
     }
 }
 
+@media(min-width: 1439px) {
+    ul>li {
+        font-size: 24px;
+    }
+    #btBox {
+        font-size: 20px;
+    }
+}
+
 
 /* ------------------FINAL NAVBAR ------------------*/
