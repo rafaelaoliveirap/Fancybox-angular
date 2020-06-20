@@ -13,11 +13,11 @@ usuario: Usuario;
 
 
   postCadastrarUsuarios(usuario: Usuario){
-    return this.http.post('http://localhost:8080/usuarios',usuario)
+    return this.http.post('http://localhost:8080/usuarios/cadastrar',usuario)
   }
 
   putUsuario(usuario: Usuario){
-    return this.http.put('http://localhost:8080/usuarios',usuario)
+    return this.http.put('http://localhost:8080/usuarios/cadastrar',usuario)
   }
 
   getByIdUsuario(id:number){

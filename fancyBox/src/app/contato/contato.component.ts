@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContatoService } from '../service/contato.service';
 import { Contato } from '../model/Contato';
 
+
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',
@@ -11,9 +12,11 @@ export class ContatoComponent implements OnInit {
 
   contato: Contato = new Contato();
 
+
+
   constructor(private contatoService: ContatoService) { }
 
-
+  
 
   ngOnInit() {
     window.scroll(0, 0)
