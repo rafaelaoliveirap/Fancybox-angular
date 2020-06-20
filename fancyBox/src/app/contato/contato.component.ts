@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContatoService } from '../service/contato.service';
 import { Contato } from '../model/Contato';
 
 @Component({
@@ -10,14 +11,22 @@ export class ContatoComponent implements OnInit {
 
   contato: Contato = new Contato();
 
-  constructor() { }
+  constructor(private contatoService: ContatoService) { }
 
-  email: string;
-  erroEmail: boolean = false;
+
 
   ngOnInit() {
     window.scroll(0, 0)
 
   }
+
+
+  enviarContato(){
+    this.contatoService.postEnviarContato(this.contato).subscribe((resp: Contato)=>{
+      this.contato = resp;
+      // alert("Mensagem enviada com sucesso! Em breve entraremos em contato.")
+      location.assign('/contato');
+    })
   
+}
 }

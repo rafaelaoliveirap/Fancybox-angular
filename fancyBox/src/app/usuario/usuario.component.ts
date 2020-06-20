@@ -15,13 +15,13 @@ export class UsuarioComponent implements OnInit {
   constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(){
-    this.todosUsuarios()
+    // this.todosUsuarios()
   }
 
-  todosUsuarios(){
-    this.usuarioService.getAllUsuarios().subscribe((resp: Usuario[])=>{
-    this.listaUsuarios=resp
-    })
-  }
+  // todosUsuarios(){
+  //   this.usuarioService.getAllUsuarios().subscribe((resp: Usuario[])=>{
+  //   this.listaUsuarios=resp
+  //   })
+  // }
 
 }

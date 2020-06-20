@@ -18,7 +18,6 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
 import { FormsModule } from '@angular/forms';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
-import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 import { LoginComponent } from './login/login.component';
 import { DoacaoComponent } from './doacao/doacao.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
@@ -40,10 +39,10 @@ import { ProdutosComponent } from './produtos/produtos.component';
     UsuarioComponent,
     CadastrarUsuariosComponent,
     EditarUsuarioComponent,
-    DeletarUsuarioComponent,
     LoginComponent,
     DoacaoComponent,
-    ProdutosComponent
+    ProdutosComponent,
+
   ],
   imports: [
     BrowserModule,

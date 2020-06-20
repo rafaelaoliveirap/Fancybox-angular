@@ -1,5 +1,5 @@
 export class Contato {
-    public id: number
+    public idContato: number
     public nome: string
     public email: string
     public assunto: string
