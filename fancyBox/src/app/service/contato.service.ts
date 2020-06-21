@@ -11,7 +11,7 @@ import { Contato } from '../model/contato';
 export class ContatoService {
 
 
-  contato: Contato
+  contato: Contato;
 
   constructor(private http: HttpClient) {}
 

@@ -19,17 +19,4 @@ usuario: Usuario;
   putUsuario(usuario: Usuario){
     return this.http.put('http://localhost:8080/usuarios/cadastrar',usuario)
   }
-
-  getByIdUsuario(id:number){
-    return this.http.get(`http://localhost:8080/usuarios/${id}`)
-  }
-
-  // deleteUsuario(id:number){
-  //   return this.http.delete(`http://93.188.161.223:9000/user/${id}`)
-  // }
-
-
-
-
-
 }

@@ -1,3 +1,5 @@
+import { LoginService } from './../service/login.service';
+import { Login } from './../model/login';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  login: Login = new Login;
 
-  ngOnInit(): void {
+
+  constructor(private loginService: LoginService) { }
+
+
+  ngOnInit(){
+    this.logar;  
   }
 
+  logar(){
+    this.loginService.postLogar(this.login).subscribe((resp: Login)=>{
+      this.login = resp;
+      location.assign('/home');
+  })
+
+}
 }

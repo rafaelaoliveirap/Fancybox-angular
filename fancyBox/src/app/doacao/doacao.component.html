@@ -8,7 +8,6 @@
         <hr class="mx-auto col-9 col-md-4 col-lg-3">
     
     </div>
-    
     <div class="row py-5 p-3">
         
         <div class="col-12 col-lg-7">
@@ -21,10 +20,7 @@
                         <label for="exampleFormControlInput1">Instituições</label>
                         <select class="custom-select">
                             <option selected>Selecione a instituição</option>
-                            <option value="1">Hope</option>
-                            <option value="2">Proud</option>
-                            <option value="3">Corredoras</option>
-                            <option value="3">Freedom</option>
+                            <option value="1" *ngFor="let ong of listaOng">{{ong.nome}}</option>
                         </select>
                     </div>
         
@@ -78,3 +74,4 @@
 <div *ngIf="mostrarLogin">
     <app-login></app-login>
 </div>
+    

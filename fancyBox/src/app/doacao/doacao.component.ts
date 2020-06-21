@@ -1,3 +1,5 @@
+import { OngService } from './../service/ong.service';
+import { Ong } from './../model/ong';
 import { Component, OnInit } from '@angular/core';
 import { faBarcode } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
@@ -8,20 +10,28 @@ import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
   styleUrls: ['./doacao.component.css']
 })
 export class DoacaoComponent implements OnInit {
+  listaOng: Ong []
+
+  Ong: Ong = new Ong;
 
   mostrarLogin: boolean=false;
-
+  
   faBarcode = faBarcode
   faCreditCard = faCreditCard
 
-  constructor() { }
+  constructor(private ongService: OngService) { }
 
   ngOnInit() {
-    window.scroll(0, 0)
+    this.findAllOngs;
   }
   exibirLogin(){
     this.mostrarLogin=true;
-    
-
   }
+  findAllOngs(){
+    this.ongService.getAllOngs().subscribe((resp: Ong[])=>{
+      this.listaOng = resp
+    })
+  }
+  
+  
 }

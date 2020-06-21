@@ -21,13 +21,6 @@ export class EditarUsuarioComponent implements OnInit {
 
   ngOnInit(): void {
     let id = this.route.snapshot.params['id']
-    this.findById(id)
-  }
-
-  findById(id:number){
-    this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario)=>{
-      this.usuario = resp
-    })
   }
 
   salvar(){
