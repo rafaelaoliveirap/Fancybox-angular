@@ -26,8 +26,8 @@ export class CadastrarUsuariosComponent implements OnInit {
 
   validarSenha(){
     if(this.data.senha === this.data.confirmaSenha){
+       this.cadastrar();
       alert("Cadastro efetuado!")
-      this.cadastrar();
      
     }else {
       alert("Senha incompátivel")
@@ -39,7 +39,7 @@ export class CadastrarUsuariosComponent implements OnInit {
   cadastrar(){
     this.usuarioService.postCadastrarUsuarios(this.usuario).subscribe((resp: Usuario)=>{
       this.usuario = resp;
-      location.assign('/cadastro');
+      location.assign('/home');
     })
   }
 

@@ -10,19 +10,23 @@ import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
   styleUrls: ['./doacao.component.css']
 })
 export class DoacaoComponent implements OnInit {
-  listaOng: Ong []
+ 
 
-  Ong: Ong = new Ong;
+  ong: Ong = new Ong;
+  
+  listaOng: Ong[]
 
   mostrarLogin: boolean=false;
   
   faBarcode = faBarcode
   faCreditCard = faCreditCard
 
+  alerta: boolean = false;
+
   constructor(private ongService: OngService) { }
 
   ngOnInit() {
-    this.findAllOngs;
+    this.findAllOngs();
   }
   exibirLogin(){
     this.mostrarLogin=true;
@@ -32,6 +36,15 @@ export class DoacaoComponent implements OnInit {
       this.listaOng = resp
     })
   }
+
+  mensagem(){
+
+    if(this.alerta = true){
+      this.alerta
+
+    }
+  }
+
   
   
 }

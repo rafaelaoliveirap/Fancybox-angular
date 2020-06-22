@@ -1,56 +1,40 @@
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content fundoLogin">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">Login</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content fundoLogin">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
+            </div>
 
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Nome:</label>
-            <input type="text" class="form-control" id="recipient-name" placeholder="digite seu nome" required [(ngModel)]="login.nome" name= "nome"/>
-          </div>
+            <div class="modal-body">
+                <form>
 
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Usuario:</label>
-            <input type="text" class="form-control" placeholder="digite seu usuario" required [(ngModel)]="login.usuario" name = "usuario"/>
-          </div>
 
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Senha:</label>
-            <input type="password" class="form-control" name="senha" id="senha" placeholder="digite sua senha" required [(ngModel)]="login.senha" name = "senha"/>
-          </div>
-        </form>
-      </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" placeholder="digite seu email" required [(ngModel)]="login.email" name="email" />
+                    </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-lg btn-block mb-2 mx-auto" (click)="logar()">
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Senha:</label>
+                        <input type="password" class="form-control" name="senha" id="senha" placeholder="digite sua senha" required [(ngModel)]="login.senha" name="senha" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-block mb-2 mx-auto" (click)="logar()">
           Entrar
         </button>
-      </div>
+            </div>
 
-      <div class="text-center mb-4 color-black">
-        <a routerLink="/cadastrar-usuarios" class="mr-5" data-dismiss="modal" aria-label="Close" aria-hidden="true">
+            <div class="text-center mb-4 color-black">
+                <a routerLink="/cadastrar-usuarios" class="mr-5" data-dismiss="modal" aria-label="Close" aria-hidden="true">
           Ainda não tem cadastro?</a>
-        <a href="">Esqueci minha senha</a>
-      </div>
+                <a href="">Esqueci minha senha</a>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
-
-
-
-
-    

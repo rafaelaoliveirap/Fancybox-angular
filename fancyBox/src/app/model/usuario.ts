@@ -1,6 +1,5 @@
 export class Usuario{
-    public id: number
-    public usuario: string
+    public idUsuario: number
     public nome: string
     public sobrenome: string
     public cpf: string

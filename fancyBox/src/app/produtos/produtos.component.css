@@ -1,27 +1,33 @@
 hr {
-  background-color:  rgb(228, 108, 108);
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0; 
-}
-.card{
-  background-color: rgba(255, 255, 255, 0.858);
-}
-.parallax{
-  background-image: url('https://i.imgur.com/Akpv9rY.jpg');
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-color: rgb(228, 108, 108);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.imagens-card{
-  width: 200px;
-  height: 200px;
+.card {
+    background-color: rgba(255, 255, 255, 0.858);
 }
 
-.head{
+.card-body {
+    padding: 0;
+}
+
+.parallax {
+    background-image: url('https://i.imgur.com/Akpv9rY.jpg');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagens-card {
+    width: 200px;
+    height: 200px;
+}
+
+.head {
     text-align: center;
     background: rgb(228, 108, 108);
     color: white;
@@ -30,42 +36,49 @@ hr {
     display: block;
 }
 
-.filter-bar{
+.filter-bar {
     list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-#botao{
-  background-color: rgb(114, 169, 241);
-  color: white;
-}
-#botao:hover{
-  background-color: rgb(228, 108, 108);
-}
-#fundoProduto{
-      
-    background-image: linear-gradient( to right,  rgba(240, 212, 120, 0.434) 25%, rgba(216, 154, 72, 0.434), rgba(228, 108, 108, 0.434) );
+    padding: 0;
+    margin: 0;
 }
 
-.filter-bar, li, a{
+#botao {
+    background-color: rgb(114, 169, 241);
+    color: white;
+}
+
+#botao:hover {
+    background-color: rgb(228, 108, 108);
+}
+
+#fundoProduto {
+    background-image: linear-gradient( to right, rgba(240, 212, 120, 0.434) 25%, rgba(216, 154, 72, 0.434), rgba(228, 108, 108, 0.434));
+}
+
+.filter-bar,
+li,
+a {
     border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
+    margin-top: -1px;
+    /* Prevent double borders */
     background-color: rgba(255, 255, 255, 0.658);
     padding: 11px;
     text-decoration: none;
     font-size: 18px;
     color: black;
     display: block;
-    text-align: center; 
-    border-radius: 1mm;  
+    text-align: center;
+    border-radius: 1mm;
 }
 
-.filter-bar, li, a:hover:not(.header) {
-    
+.filter-bar,
+li,
+a:hover:not(.header) {
     color: black;
     border: 1px solid #ddd;
-  }
-  li{
+}
+
+li {
     background-color: transparent;
     border: none;
-  }
+}

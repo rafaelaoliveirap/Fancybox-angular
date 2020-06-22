@@ -19,7 +19,7 @@ hr {
 }
 
 .responsividadeDesktop {
-    width: 30vw;
+    width: 20vw;
 }
 
 .bt {
@@ -58,7 +58,7 @@ hr {
         display: none;
     }
     .responsividadeDesktop {
-        width: 50vw;
+        width: 45vw;
     }
     .tituloFAQ>h2 {
         font-size: 40px;

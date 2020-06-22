@@ -27,7 +27,7 @@ export class ContatoComponent implements OnInit {
   enviarContato(){
     this.contatoService.postEnviarContato(this.contato).subscribe((resp: Contato)=>{
       this.contato = resp;
-      // alert("Mensagem enviada com sucesso! Em breve entraremos em contato.")
+      alert("Mensagem enviada com sucesso! Em breve entraremos em contato.")
       location.assign('/contato');
     })
   
