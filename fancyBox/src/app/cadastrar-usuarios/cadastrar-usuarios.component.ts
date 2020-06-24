@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioService } from '../service/usuario.service';
+
 import { Usuario } from '../model/usuario';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-cadastrar-usuarios',
@@ -11,36 +12,34 @@ export class CadastrarUsuariosComponent implements OnInit {
 
   usuario: Usuario = new Usuario;
 
-  data = {
-    senha: '',
-    confirmaSenha: '',
-  };
+  senha: string;
 
-  constructor(private usuarioService: UsuarioService) { }
+  constructor(private authService:AuthService) { }
 
 
 
   ngOnInit() {
     window.scroll(0, 0)
   }
+  
+  conferirSenha(event:any){
+    this.senha=event.target.value
 
-  validarSenha(){
-    if(this.data.senha === this.data.confirmaSenha){
-       this.cadastrar();
-      alert("Cadastro efetuado!")
-     
-    }else {
-      alert("Senha incompátivel")
-      document.getElementById("confirmaSenha").style.borderColor="red";
-        
-    }
   }
 
   cadastrar(){
-    this.usuarioService.postCadastrarUsuarios(this.usuario).subscribe((resp: Usuario)=>{
-      this.usuario = resp;
-      location.assign('/home');
-    })
+    if(this.senha===this.usuario.senha){
+
+      this.authService.cadastrar(this.usuario).subscribe((resp: Usuario)=>{
+        this.usuario = resp;
+        location.assign('/home');
+      })
+     
+    }
+    else{
+      alert("Senhas não correspondem");
+    }
+   
   }
 
  

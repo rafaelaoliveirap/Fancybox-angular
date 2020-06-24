@@ -8,6 +8,9 @@ body {
 nav {
     background-color: white;
 }
+a{
+    cursor: pointer;
+}
 
 #botao {
     background-color: #DEF481;

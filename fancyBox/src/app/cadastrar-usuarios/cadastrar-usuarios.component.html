@@ -66,16 +66,16 @@
 
             <div class="form-group ">
                 <label for="senha ">Senha</label>
-                <input type="password" class="form-control " name="senha" placeholder="Insira a senha " id="senha " [(ngModel)]="usuario.senha " [(ngModel)]="data.senha " />
+                <input type="password" class="form-control " name="senha" placeholder="Insira a senha " (input)='conferirSenha($event)'value={{senha}}/>
             </div>
 
             <div class="form-group ">
                 <label for="exampleCheck1 ">Confirme a senha</label>
-                <input type="password" name="senha" onfocus="this.value='' ; " class="form-control " value="#confirmaSenha " placeholder="Confirme a senha " id="confirmaSenha " [(ngModel)]="data.confirmaSenha " />
+                <input type="password" name="senha" onfocus="this.value='' ; " class="form-control " value="#confirmaSenha " placeholder="Confirme a senha "  [(ngModel)]="usuario.senha " />
             </div>
 
             <div class=" d-flex justify-content-end ">
-                <button type=" submit " class="btn btn-outline w-25 mb-2 " (click)="validarSenha() ">
+                <button type=" submit " class="btn btn-outline w-25 mb-2 " (click)="cadastrar() ">
           Cadastrar
         </button>
             </div>
