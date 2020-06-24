@@ -11,11 +11,6 @@ usuario: Usuario;
 
   constructor(private http: HttpClient) {}
 
-
-  postCadastrarUsuarios(usuario: Usuario){
-    return this.http.post('http://localhost:8080/usuarios/cadastrar',usuario)
-  }
-
   putUsuario(usuario: Usuario){
     return this.http.put('http://localhost:8080/usuarios/cadastrar',usuario)
   }

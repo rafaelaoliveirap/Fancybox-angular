@@ -1,7 +1,7 @@
 <div class="container-fluid  bg-white shadow">
     <nav class="navbar navbar-expand-lg navbar-light ">
 
-        <img id="logo" class="navbar-brand col-lg-2 col-md-3 col-sm-4 mr-5 " src="https://i.imgur.com/YYATN5x.png" routerLink="/home" alt="Logo Fancybox">
+        <img id="logo" class="navbar-brand col-lg-2 col-md-3 col-sm-4 mr-5  "  src="https://i.imgur.com/YYATN5x.png" routerLink="/home" alt="Logo Fancybox">
         
         <img id="logo2" class="navbar-brand col-lg-2 col-md-3 col-sm-4s" src="https://i.imgur.com/YYATN5x.png" routerLink="/home" alt="Logo Fancybox">
 
@@ -11,9 +11,9 @@
 
         
 
-        <div class="collapse row navbar-collapse" id="navbarNav">
+        <div class="collapse row navbar-collapse d-flex justify-content-between" id="navbarNav">
 
-            <ul class="navbar-nav col-md-8 textoNav" style="font-size: large;">
+            <ul class="navbar-nav col-md-7 textoNav" style="font-size: large;">
 
                 <li class="nav-item mr-4">
                     <a class="nav-link" routerLink="/home">Home</a>
@@ -36,14 +36,44 @@
             </ul>
 
             <ul class="navbar-nav textoNav col-md-4 d-flex justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link btn" id="btBox" routerLink="/cadastrar-usuarios">MONTE SUA BOX</a>
-                </li>
+              
+                <div *ngIf='auth.btnLogin()'>
+                    <li class="nav-item">
+                        <a class="nav-link btn" id="btBox" routerLink="/cadastrar-usuarios">MONTE SUA BOX</a>
+                    </li>
+                </div>
 
 
-                <li class="nav-item">
-                    <a class="nav-link " aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="exibirLogin()">Login</a>
-                </li>
+              
+
+            
+            
+                <div *ngIf='auth.btnSair()'>
+                    <li class="nav-item">
+                        <a class="nav-link btn" id="btBox" routerLink="/produtos">MONTE SUA BOX</a>
+                    </li>
+                </div>
+                <div class="dropdown" *ngIf='auth.btnSair()'>
+                    <a class="nav-link dropdown-toggle text-center" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{nome}}
+                </a>
+                <div class="dropdown-menu dropdown-menu-center">
+                    <a class="dropdown-item  " (click)="sair()">Sair</a>
+                  </div>
+                </div>
+
+                  <div class="d-flex align-items-center ">
+                  <a > <fa-icon [icon]="faShoppingCart" class="fa-1x px-2"></fa-icon> </a>
+                  </div>
+                
+
+                <div *ngIf='auth.btnLogin()'>
+                    <li class="nav-item">
+                        <a class="nav-link  " aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="exibirLogin()">Entrar</a>
+                    </li>
+                </div>
+                
+                
             </ul>
 
         </div>

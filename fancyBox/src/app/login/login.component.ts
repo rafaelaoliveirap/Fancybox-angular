@@ -1,6 +1,8 @@
-import { LoginService } from './../service/login.service';
+
 import { Login } from './../model/login';
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,18 +14,24 @@ export class LoginComponent implements OnInit {
   login: Login = new Login;
 
 
-  constructor(private loginService: LoginService) { }
 
+
+  constructor(private authService: AuthService, private router:Router) {} 
 
   ngOnInit(){
-    this.logar;  
+   
   }
 
-  logar(){
-    this.loginService.postLogar(this.login).subscribe((resp: Login)=>{
-      this.login = resp;
-      location.assign('/home');
-  })
+ 
+logar(){
+  this.authService.logar(this.login).subscribe((resp: Login) => {
+    this.login = resp;
+    localStorage.setItem('token', this.login.token);
+    localStorage.setItem('nome', this.login.nome);
+    this.router.navigate(['produtos']);
+  }, err => {
+    alert('Houve um erro ao entrar, verifique o e-mail e a senha');
+  });
+}
+}
 
-}
-}
