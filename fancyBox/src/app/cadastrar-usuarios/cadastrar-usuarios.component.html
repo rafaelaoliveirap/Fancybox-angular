@@ -13,61 +13,79 @@
 
             <div class="form-group">
                 <label>Nome</label>
-                <input type="text" #nome="ngModel" class="form-control" placeholder="Insira o nome" ngModel required [(ngModel)]="usuario.nome" />
+                <input id="nome" type="text" #nome="ngModel" class="form-control" placeholder="Insira o nome" ngModel required minlength="2" maxlength="50" [(ngModel)]="usuario.nome" />
             </div>
 
-            <div *ngIf="!nome.valid && nome.touched" class="alert alert-danger" role="alert">Nome é obrigatório</div>
+            <div *ngIf="!nome.valid && nome.touched" class="alert alert-danger" role="alert">O campo nome deve ter entre 2 e 50 caracteres.</div>
 
             <div class="form-group">
                 <label>Sobrenome</label>
-                <input type="text" class="form-control" placeholder="Insira o sobrenome" ngModel required [(ngModel)]="usuario.sobrenome" />
+                <input id="sobrenome" type="text" #sobrenome="ngModel" class="form-control" placeholder="Insira o sobrenome" ngModel required minlength="2" maxlength="60" [(ngModel)]="usuario.sobrenome" />
             </div>
 
+            <div *ngIf="!sobrenome.valid && sobrenome.touched" class="alert alert-danger" role="alert">O campo sobrenome deve ter entre 2 e 60 caracteres.</div>
 
             <div class=" form-group ">
                 <label>CPF</label>
-                <input type="text " class="form-control " placeholder="Insira o CPF sem caracteres especiais ( - , * ). " required [(ngModel)]="usuario.cpf " />
+                <input id="cpf" type="text" #cpf="ngModel" class="form-control " placeholder="Insira o CPF sem caracteres especiais ( - , * ). " required required minlength="11" maxlength="11"[(ngModel)]="usuario.cpf " />
             </div>
+
+            <div *ngIf="!cpf.valid && cpf.touched" class="alert alert-danger" role="alert">O campo cpf deve ter 11 digítos.</div>
 
             <div class="form-group ">
                 <label>Logradouro</label>
-                <input type="text " class="form-control " placeholder="Insira o logradouro " required [(ngModel)]="usuario.logradouro " />
+                <input id="logradouro" type="text" #logradouro="ngModel" class="form-control " placeholder="Insira o logradouro " required minlength="5" maxlength="120"[(ngModel)]="usuario.logradouro " />
             </div>
+
+            <div *ngIf="!logradouro.valid && logradouro.touched" class="alert alert-danger" role="alert">O campo logradouro deve ter entre 5 e 120 caracteres.</div>
 
             <div class="form-group ">
                 <label>Complemento</label>
-                <input type="text " class="form-control " placeholder="Insira o complemento " required [(ngModel)]="usuario.complemento " />
+                <input id="complemento" type="text " #complemento="ngModel" class="form-control " placeholder="Insira o complemento " required minlength="3" maxlength="60"[(ngModel)]="usuario.complemento " />
             </div>
+
+            <div *ngIf="!complemento.valid && complemento.touched" class="alert alert-danger" role="alert">O campo complemento deve ter entre 3 e 60 caracteres.</div>
 
             <div class="form-group ">
                 <label>Bairro</label>
-                <input type="text " class="form-control " placeholder="Insira o bairro " required [(ngModel)]="usuario.bairro " />
+                <input id="bairro" type="text" #bairro="ngModel" class="form-control " placeholder="Insira o bairro " required minlength="2" maxlength="60"[(ngModel)]="usuario.bairro " />
             </div>
+
+            <div *ngIf="!bairro.valid && bairro.touched" class="alert alert-danger" role="alert">O campo bairro deve ter entre 2 e 60 caracteres.</div>
 
             <div class="form-group ">
                 <label>Cidade</label>
-                <input type="text " class="form-control " placeholder="Insira a cidade " required [(ngModel)]="usuario.cidade " />
+                <input id="cidade" type="text" #cidade="ngModel" class="form-control " placeholder="Insira a cidade " required minlength="3" maxlength="60"[(ngModel)]="usuario.cidade " />
             </div>
+
+            <div *ngIf="!cidade.valid && cidade.touched" class="alert alert-danger" role="alert">O campo cidade deve ter entre 3 e 60 caracteres.</div>
 
             <div class="form-group ">
                 <label>Estado</label>
-                <input type="text " class="form-control " placeholder="ex: SP, MG, RN... " required [(ngModel)]="usuario.estado " />
+                <input id="estado" type="text" #estado="ngModel" class="form-control " placeholder="ex: SP, MG, RN... " required minlength="2" maxlength="2"[(ngModel)]="usuario.estado " />
             </div>
+
+            <div *ngIf="!estado.valid && estado.touched" class="alert alert-danger" role="alert">O campo estado deve ter 2 digítos.</div>
 
             <div class="form-group ">
                 <label>CEP</label>
-                <input type="text " class="form-control " placeholder="Insira o CEP " required [(ngModel)]="usuario.cep " />
+                <input id="cep" type="text" #cep="ngModel" class="form-control " placeholder="Insira o CEP " required minlength="8" maxlength="8"[(ngModel)]="usuario.cep " />
             </div>
+
+            <div *ngIf="!cep.valid && cep.touched" class="alert alert-danger" role="alert">O campo cep deve ter entre 8 digítos.</div>
 
             <div class="form-group ">
                 <label>Email</label>
-                <input type="email " class="form-control " placeholder="Insira o email " id="email " [(ngModel)]="usuario.email " required email/>
+                <input id="email" type="email" #email="ngModel" class="form-control " placeholder="Insira o email" required minlength="9" maxlength="100"  [(ngModel)]="usuario.email " required email/>
             </div>
+
+            <div *ngIf="!email.valid && email.touched" class="alert alert-danger" role="alert">O campo email deve ter entre 9 e 100 caracteres.</div>
 
             <div class="form-group ">
                 <label for="senha ">Senha</label>
                 <input type="password" class="form-control " name="senha" placeholder="Insira a senha " id="senha " [(ngModel)]="usuario.senha " [(ngModel)]="data.senha " />
             </div>
+            
 
             <div class="form-group ">
                 <label for="exampleCheck1 ">Confirme a senha</label>
