@@ -22,7 +22,7 @@ import { LoginComponent } from './login/login.component';
 import { DoacaoComponent } from './doacao/doacao.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ProdutosComponent } from './produtos/produtos.component';
-
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,6 +42,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
     LoginComponent,
     DoacaoComponent,
     ProdutosComponent,
+    
 
   ],
   imports: [
@@ -50,6 +51,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     ScrollToModule.forRoot()
     
   ],
