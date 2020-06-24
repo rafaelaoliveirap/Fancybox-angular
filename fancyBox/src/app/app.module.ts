@@ -52,6 +52,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ReactiveFormsModule,
     ScrollToModule.forRoot()
     
   ],

@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 import { Login } from '../model/login';
-import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -11,13 +12,9 @@ import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 export class NavbarComponent implements OnInit {
 
 
+
   faShoppingCart = faShoppingCart
- 
-
   mostrarLogin: boolean=false;
-
-  
-
   nome: string = localStorage.getItem('nome')
 
   constructor(private router: Router,public auth: AuthService) { }
