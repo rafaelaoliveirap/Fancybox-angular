@@ -22,7 +22,8 @@ import { LoginComponent } from './login/login.component';
 import { DoacaoComponent } from './doacao/doacao.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ProdutosComponent } from './produtos/produtos.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import {JwPaginationModule} from 'jw-angular-pagination';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
     ReactiveFormsModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    JwPaginationModule
     
   ],
   providers: [],
