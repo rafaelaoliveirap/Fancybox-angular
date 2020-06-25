@@ -11,7 +11,12 @@ import { CategoriaService } from '../service/categoria.service';
 })
 export class ProdutosComponent implements OnInit {
 
+  items = [];
+  
+  pageOfItems: Array<any>;
+
   listaProdutos: Produto[]
+  
 
   produto: Produto = new Produto
 
@@ -27,7 +32,7 @@ export class ProdutosComponent implements OnInit {
 
   findAllProdutos(){
     this.produtoService.getAllProdutos().subscribe((resp: Produto[])=>{
-      this.listaProdutos = resp;
+      this.items = resp;
     })
   }
 
@@ -36,6 +41,10 @@ export class ProdutosComponent implements OnInit {
       this.listaCategoria = resp;
     })
     
+  }
+
+  onChangePage(pageOfItems: Array<any>){
+    this.listaProdutos = pageOfItems;
   }
 
 }

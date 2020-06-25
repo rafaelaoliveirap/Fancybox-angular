@@ -17,8 +17,8 @@
                     <ul class="main-categories list-unstyled ">
 
 
-                        <li class="main-nav-list" *ngFor="let categoria of listaCategoria">
-                            <a data-toggle="collapse" href="#" aria-expanded="false" aria-controls="cooking" class="lnr lnr-arrow-right">{{categoria.nomeCategoria}}
+                        <li class="main-nav-list" *ngFor="let produto of listaCategoria">
+                            <a data-toggle="collapse" href="#" aria-expanded="false" aria-controls="cooking" class="lnr lnr-arrow-right">{{produto.nomeCategoria}}
                           </a>
 
                         </li>
@@ -46,22 +46,25 @@
 
                         <!-- single product -->
                         <div class="col border-0 d-flex justify-content-around py-2">
-                            <div class="card text-center" style="width: 16rem;" *ngFor="let produto of listaProdutos">
+                            <div class="card text-center" style="width: 16rem;" *ngFor="let item of listaProdutos">
 
                                 <div class="card-body border-0">
 
-                                    <img src="{{ produto.imagem }}" class="card-img-top imagens-card" alt="Imagem de um {{produto.nomeProduto}}" />
+                                    <img src="{{ item.imagem }}" class="card-img-top imagens-card" alt="Imagem de um {{item.nomeProduto}}" />
 
-                                    <h5 class="card-title">{{ produto.nomeProduto }}</h5>
+                                    <h5 class="card-title">{{ item.nomeProduto }}</h5>
                                 </div>
 
                                 <div class="card-body">
 
-                                    <small class="font-weight-bold">{{produto.descricao}}</small>
-                                    <p class="mt-2">R{{produto.preco | currency}}</p>
+                                    <small class="font-weight-bold">{{item.descricao}}</small>
+                                    <p class="mt-2">R{{item.preco | currency}}</p>
 
-                                    <button [routerLink]="['/editar', produto.id]" class="btn btn-outline-info border-0 mb-2 " id="botao">Adicionar a box</button>
+                                    <button [routerLink]="['/editar', item.id]" class="btn btn-outline-info border-0 mb-2 " id="botao">Adicionar a box</button>
 
+                                </div>
+                                <div class="card-footer pb-0 pt-3">
+                                    <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
                                 </div>
 
                             </div>
