@@ -1,15 +1,34 @@
-button{
-   
+button {
     background-color: rgba(228, 90, 90, 0.151);
     border: 1px solid bisque;
 }
-a{
-  color: black;  
-}
-button:hover{
 
+a {
+    color: black;
+}
+
+button:hover {
     background-color: rgb(228, 90, 90);
 }
-.fundoLogin{
-    background-image: linear-gradient( to right, rgba(228, 108, 108, 0.698) 25%, rgba(226, 152, 118, 0.698), rgba(240, 212, 120, 0.698) ); 
+
+
+/* .Largura {
+    max-width: 933px!important;
+}
+
+.altura {
+    height: 450px!important;
+} */
+
+.modal-dialog {
+    /* margin: 5.75rem auto; */
+}
+
+.fundoLogin {
+    background-image: linear-gradient( to right, rgba(228, 108, 108, 0.555) 25%, rgba(226, 152, 118, 0.527), rgba(240, 212, 120, 0.671));
+}
+
+.modal-content {
+    width: 800px;
+    height: 800px;
 }

@@ -11,12 +11,10 @@ import { CategoriaService } from '../service/categoria.service';
 })
 export class ProdutosComponent implements OnInit {
 
-  items = [];
-  
-  pageOfItems: Array<any>;
 
   listaProdutos: Produto[]
   
+  // idCategoria: number;
 
   produto: Produto = new Produto
 
@@ -28,11 +26,13 @@ export class ProdutosComponent implements OnInit {
   ngOnInit(): void {
     this.findAllProdutos();
     this.findAllCategoria();
+ 
+  
   }
 
   findAllProdutos(){
     this.produtoService.getAllProdutos().subscribe((resp: Produto[])=>{
-      this.items = resp;
+      this.listaProdutos = resp;
     })
   }
 
@@ -43,8 +43,12 @@ export class ProdutosComponent implements OnInit {
     
   }
 
-  onChangePage(pageOfItems: Array<any>){
-    this.listaProdutos = pageOfItems;
-  }
+  // buscarId(){
+  //   this.produtoService.findByIdCategoria(this.idCategoria).subscribe((resp: Produto[])=>{
+  //     this.listaProdutos = resp
+  //   })
+
+  // }
+
 
 }

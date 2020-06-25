@@ -36,9 +36,10 @@ export class CadastrarUsuariosComponent implements OnInit {
 
     const usuario = new Usuario();
 
-    alert(`O usuário ${usuario.nome} foi cadastrado com sucesso. \n Dados: ${JSON.stringify(usuario)}`);
+    
 
-    this.formularioDeUsuario.reset();
+    // this.formularioDeUsuario.reset();
+    
   }
 
   criarFormularioDeUsuario(){
@@ -68,12 +69,14 @@ export class CadastrarUsuariosComponent implements OnInit {
 
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario)=>{
         this.usuario = resp;
+        alert("Usuario cadastrado com sucesso")
         location.assign('/home');
       })
      
     }
     else{
       alert("Senhas não correspondem");
+      
     }
    
   }

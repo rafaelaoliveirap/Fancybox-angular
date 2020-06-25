@@ -7,7 +7,7 @@
     }
     
     hr {
-        background-color: #DEF481
+        background-color: rgb(114, 169, 241);
     }
     
     .imgSobre {
@@ -15,16 +15,6 @@
         height: 200px;
         border-radius: 75%;
     }
-    /* @media(max-width:670px) {
-        .parallax>.container-fluid {
-            width: 80%;
-            margin: 0 auto;
-        }
-        img {
-            margin-bottom: 30px;
-        }
-    }
-    */
     
     .flip-card {
         background-color: transparent;

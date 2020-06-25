@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Produto } from '../model/produto';
+import { Categoria } from '../model/categoria';
 
 
 
@@ -14,6 +15,8 @@ export class ProdutoService {
 
   produto: Produto;
 
+  categoria: Categoria;
+
   constructor(private http: HttpClient) {}
 
 
@@ -21,4 +24,9 @@ export class ProdutoService {
     return this.http.get('http://127.0.0.1:8080/produto')
   }
 
+  // findByIdCategoria(id:number){
+  //   return this.http.get(`http://localhost:8080/produto/categoria/${id}`)
+  // }
+
 }
+

@@ -1,5 +1,5 @@
 <div id="" id="fundoProduto">
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="container mx-auto pb-5">
             <h2 class="pt-5 pb-2 text-black d-flex justify-content-center">Produtos</h2>
@@ -10,7 +10,7 @@
         <div class="parallax"> </div>
 
         <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-5 my-5">
+            <div class="col-xl-3 col-lg-4 col-md-4 my-5">
                 <div class="sidebar-categories">
                     <div class="btn btn head">CATEGORIAS</div>
 
@@ -18,7 +18,7 @@
 
 
                         <li class="main-nav-list" *ngFor="let produto of listaCategoria">
-                            <a data-toggle="collapse" href="#" aria-expanded="false" aria-controls="cooking" class="lnr lnr-arrow-right">{{produto.nomeCategoria}}
+                            <a data-toggle="collapse" href="#" aria-expanded="false" class="lnr lnr-arrow-right">{{produto.nomeCategoria}}
                           </a>
 
                         </li>
@@ -27,9 +27,9 @@
                 </div>
             </div>
 
-            <div class="col-xl-9 col-lg-8 col-md-7 mt-5">
+            <div class="col-xl-9 col-lg-8 col-md-8 mt-5">
                 <!-- Start Filter Bar -->
-                <div class="btn btn filter-bar d-flex flex-wrap align-items-center " style="border: none;">
+                <!-- <div class="btn btn filter-bar d-flex flex-wrap align-items-center " style="border: none;">
                     <div class=" mr-auto ">
                         <select>
                        <option value="1">RELEVÂNCIA</option>
@@ -37,44 +37,37 @@
                         <option value="1">MENOR PREÇO</option>							
                     </select>
                     </div>
-                </div>
+                </div> -->
                 <!-- End Filter Bar -->
 
                 <!-- Start Best Seller -->
                 <section class="lattest-product-area pb-40 category-list">
-                    <div class="row">
 
-                        <!-- single product -->
-                        <div class="col border-0 d-flex justify-content-around py-2">
-                            <div class="card text-center" style="width: 16rem;" *ngFor="let item of listaProdutos">
+                    <!-- single product -->
+                    <div class="row justify-content-around border-0 py-2">
 
-                                <div class="card-body border-0">
+                        <div class="card my-2 text-center" style="width: 16rem;" *ngFor="let produto of listaProdutos">
 
-                                    <img src="{{ item.imagem }}" class="card-img-top imagens-card" alt="Imagem de um {{item.nomeProduto}}" />
+                            <div class="card-body border-0">
 
-                                    <h5 class="card-title">{{ item.nomeProduto }}</h5>
-                                </div>
+                                <img src="{{ produto.imagem }}" class="card-img-top imagens-card" alt="Imagem de um {{produto.nomeProduto}}" />
 
-                                <div class="card-body">
+                                <h5 class="card-title">{{ produto.nomeProduto }}</h5>
+                            </div>
 
-                                    <small class="font-weight-bold">{{item.descricao}}</small>
-                                    <p class="mt-2">R{{item.preco | currency}}</p>
+                            <div class="card-body">
 
-                                    <button [routerLink]="['/editar', item.id]" class="btn btn-outline-info border-0 mb-2 " id="botao">Adicionar a box</button>
+                                <small class="font-weight-bold">{{produto.descricao}}</small>
+                                <p class="mt-2">R{{produto.preco | currency}}</p>
 
-                                </div>
-                                <div class="card-footer pb-0 pt-3">
-                                    <jw-pagination [items]="items" (changePage)="onChangePage($event)"></jw-pagination>
-                                </div>
+                                <button [routerLink]="['/editar', produto.id]" class="btn btn-outline-info border-0 mb-2 " id="botao">Adicionar a box</button>
 
                             </div>
 
                         </div>
 
-
-
-
                     </div>
+
 
                 </section>
 
