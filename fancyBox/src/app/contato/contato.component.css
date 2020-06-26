@@ -46,3 +46,7 @@ button:hover{
     color: red;
     margin: 0;
   }
+
+  .ng-invalid.ng-touched:not(form) {
+    border: 1px solid red;
+}

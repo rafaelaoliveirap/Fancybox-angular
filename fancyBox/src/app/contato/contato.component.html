@@ -14,34 +14,39 @@
 
         <section class="col-md-5 py-3 shadow mb-5" id="formulario">
 
+            <form [formGroup]="formularioDeContato" (ngSubmit)="enviarDados()">
+
             <div class="form-group w-100">
                 
-                <label for="exampleFormControlInput1">Nome</label>
-                <input type="text" name="nome" required class="form-control" id="exampleFormControlInput1" placeholder="Digite o seu nome completo" required [(ngModel)]="contato.nome">
-                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" formControlName="nome" class="form-control" id="nome" placeholder="Digite o seu nome completo" required minlength="2" maxlength="50"  [(ngModel)]="contato.nome">
+                <div *ngIf="!nome.valid && nome.touched" class="alert alert-danger" role="alert">O campo nome deve ter entre 2 e 50 caracteres.</div>
             </div>
 
             <div class="form-group w-100">
-                <label for="exampleFormControlInput1">Email</label>
-                <input type="email" name="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="contato.email">
+                <label for="email">Email</label>
+                <input type="email" name="email" formControlName="email" class="form-control" id="email" placeholder="name@example.com" required minlength="9" maxlength="100"[(ngModel)]="contato.email">
+                <div *ngIf="!email.valid && email.touched" class="alert alert-danger" role="alert">O campo email deve ter entre 9 e 100 caracteres.</div>
             </div>
 
             <div class="form-group w-100">
-                <label for="exampleFormControlInput1">Assunto</label>
-                <input type="text" name="text" required class="form-control" id="exampleFormControlInput1" placeholder="Digite o assunto" [(ngModel)]="contato.assunto">
+                <label for="assunto">Assunto</label>
+                <input type="text" name="assunto" formControlName="assunto" class="form-control" id="assunto" placeholder="Digite o assunto" required required minlength="2" maxlength="50"[(ngModel)]="contato.assunto">
+                <div *ngIf="!assunto.valid && assunto.touched" class="alert alert-danger" role="alert">O campo assunto deve ter entre 2 e 50 caracteres.</div>
             </div>
 
             <div class="form-group w-100">
-                <label for="exampleFormControlTextarea1">Mensagem</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escreva sua mensagem" rows="3" name="text" required [(ngModel)]="contato.mensagem"></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" formControlName="mensagem" placeholder="Escreva sua mensagem" rows="3" name="mensagem" required required minlength="2" [(ngModel)]="contato.mensagem"></textarea>
+                <div *ngIf="!mensagem.valid && mensagem.touched" class="alert alert-danger" role="alert">O campo mensagem deve ter pelo menos 2 caracteres.</div>
             </div>
 
             <div class=" d-flex justify-content-end">
-                <button class="btn btn-outline w-25" (click)="enviarContato() ">Enviar
+                <button [disabled]="!formularioDeContato.valid" class="btn btn-outline w-25" (click)="enviarContato() ">Enviar
 
                 </button>
             </div>
-
+        </form>
         </section>
 
         <section class="col-md-5">

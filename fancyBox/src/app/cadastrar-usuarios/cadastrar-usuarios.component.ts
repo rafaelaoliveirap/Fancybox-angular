@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Usuario } from '../model/usuario';
 import { AuthService } from '../service/auth.service';
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 
 
