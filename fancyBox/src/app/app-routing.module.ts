@@ -15,6 +15,7 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { LoginComponent } from './login/login.component';
 import { DoacaoComponent } from './doacao/doacao.component';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 
 
@@ -35,6 +36,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'doacao', component: DoacaoComponent},
   {path: 'produtos', component: ProdutosComponent},
+  {path: 'carrinho', component: CarrinhoComponent}
  
 ];
 

@@ -1,34 +1,47 @@
-button {
-    background-color: rgba(228, 90, 90, 0.151);
-    border: 1px solid bisque;
+.btn-logar {
+    background-color: rgb(228, 108, 108);
+    color: white;
+    
 }
 
 a {
     color: black;
 }
 
-button:hover {
+.btn-logar:hover {
     background-color: rgb(228, 90, 90);
 }
 
-
-/* .Largura {
-    max-width: 933px!important;
-}
-
-.altura {
-    height: 450px!important;
-} */
-
-.modal-dialog {
-    /* margin: 5.75rem auto; */
-}
 
 .fundoLogin {
     background-image: linear-gradient( to right, rgba(228, 108, 108, 0.555) 25%, rgba(226, 152, 118, 0.527), rgba(240, 212, 120, 0.671));
 }
 
 .modal-content {
-    width: 800px;
-    height: 800px;
+    border-radius: 1rem;
+    letter-spacing: .1rem;
+    padding: 1rem;
+    transition: all 0.2s;
+}
+input{
+    border-radius: 0.5rem;
+
+    transition: all 0.2s;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+}
+.modal, .modal-content, .row, .modal-body,.img-1{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-close{
+    font-size: 30px;
+    
 }

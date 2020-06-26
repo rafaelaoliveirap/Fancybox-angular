@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit {
 
   faShoppingCart = faShoppingCart
   mostrarLogin: boolean=false;
+  mostrarCarrinho: boolean = false;
   nome: string = localStorage.getItem('nome')
 
   constructor(private router: Router,public auth: AuthService) { }
@@ -26,6 +27,10 @@ export class NavbarComponent implements OnInit {
   exibirLogin(){
     this.mostrarLogin=true;
     
+  }
+
+  exibirCarrinho(){
+    this.mostrarCarrinho = true;
   }
 
   sair(){

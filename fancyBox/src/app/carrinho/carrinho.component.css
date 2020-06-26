@@ -1,0 +1,20 @@
+.btn-finalizar{
+    background-color: rgb(228, 108, 108);
+    color: white;
+}
+.card{
+    border: none;
+    padding: 0;
+    
+}
+.descricao{
+    font-size: 13px;
+
+}
+.modal-content{
+    height: 90vh;
+}
+.modal-header{
+    background-color:  rgb(114, 169, 241);
+    color: white;
+}

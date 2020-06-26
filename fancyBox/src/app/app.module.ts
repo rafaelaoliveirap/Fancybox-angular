@@ -24,6 +24,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {JwPaginationModule} from 'jw-angular-pagination';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import {JwPaginationModule} from 'jw-angular-pagination';
     LoginComponent,
     DoacaoComponent,
     ProdutosComponent,
+    CarrinhoComponent,
     
 
   ],
