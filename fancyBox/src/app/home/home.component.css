@@ -56,7 +56,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.SetaResponsiva{
+    color: rgb(114, 169, 241);
+}
 @media (max-width: 856px) {
     .tamanho {
         width: 100%;
@@ -102,9 +104,3 @@
     }
 }
 
-/* Depoimentos - Seta do fundo do Carrossel responsivo */
-.carouselResponsivo{
-
-    background-image: url('https://i.imgur.com/QyUnxvs.png');
-    background-position: center ;
- }
