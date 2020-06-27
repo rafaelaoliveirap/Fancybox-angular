@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Categoria } from '../model/categoria';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -16,8 +17,9 @@ export class CategoriaService {
   constructor(private http: HttpClient) {}
 
 
-getAllCategorias(){
-    return this.http.get('http://127.0.0.1:8080/categoria')
+   getAllCategorias() : Observable<Array<Categoria>>
+  {
+    return this.http.get<Array<Categoria>>('http://127.0.0.1:8080/categoria')
   }
 
   

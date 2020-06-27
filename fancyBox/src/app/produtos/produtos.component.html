@@ -12,55 +12,51 @@
         <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-4 my-5">
                 <div class="sidebar-categories">
-                    <div class="btn btn head">CATEGORIAS</div>
+                    <div class="btn btn head" (click)="listarTodos()">CATEGORIAS</div>
 
-                    <ul class="main-categories list-unstyled ">
-
-
-                        <li class="main-nav-list" *ngFor="let produto of listaCategoria">
-                            <a data-toggle="collapse" href="#" aria-expanded="false" class="lnr lnr-arrow-right">{{produto.nomeCategoria}}
-                          </a>
-
-                        </li>
+                    <ul class="main-categories list-unstyled">
+                        <ng-container *ngFor="let categoria of listaCategorias">
+                            <li class="main-nav-list " (click)="setarCategoriaNaUrl(categoria.idCategoria)">{{categoria.nomeCategoria}}</li>
+                        </ng-container>
 
                     </ul>
                 </div>
             </div>
 
-            <div class="col-xl-9 col-lg-8 col-md-8 mt-5">
+            <div class="col-xl-9 col-lg-8 col-md-8 mt-5 ">
                 <!-- Start Filter Bar -->
-                <!-- <div class="btn btn filter-bar d-flex flex-wrap align-items-center " style="border: none;">
+                <!-- <div class="btn btn filter-bar d-flex flex-wrap align-items-center " style="border: none; ">
                     <div class=" mr-auto ">
                         <select>
-                       <option value="1">RELEVÂNCIA</option>
-                        <option value="1">MAIOR PREÇO</option>
-                        <option value="1">MENOR PREÇO</option>							
+                       <option value="1 ">RELEVÂNCIA</option>
+                        <option value="1 ">MAIOR PREÇO</option>
+                        <option value="1 ">MENOR PREÇO</option>							
                     </select>
                     </div>
                 </div> -->
                 <!-- End Filter Bar -->
 
                 <!-- Start Best Seller -->
-                <section class="lattest-product-area pb-40 category-list">
+                <section class="lattest-product-area pb-40 category-list ">
 
                     <!-- single product -->
-                    <div class="row justify-content-around border-0 py-2">
+                    <div class="row justify-content-around border-0 py-2 ">
 
-                        <div class="card my-2 text-center" style="width: 16rem;" *ngFor="let produto of listaProdutos">
+                        <div class="card my-2 text-center " style="width: 16rem; " *ngFor="let produto of listaProdutos ">
 
-                            <div class="card-body border-0">
+                            <div class="card-body border-0 ">
 
-                                <img src="{{ produto.imagem }}" class="card-img-top imagens-card" alt="Imagem de um {{produto.nomeProduto}}" />
+                                <img src="{{ produto.imagem }} " class="card-img-top imagens-card " alt="Imagem de um {{produto.nomeProduto}} " />
 
-                                <h5 class="card-title">{{ produto.nomeProduto }}</h5>
+                                <h5 class="card-title ">{{ produto.nomeProduto }}</h5>
                             </div>
 
-                            <div class="card-body">
+                            <div class="card-body ">
 
-                                <small class="font-weight-bold">{{produto.descricao}}</small>
-                                <p class="mt-2">R{{produto.preco | currency}}</p>
+                                <small class="font-weight-bold ">{{produto.descricao}}</small>
+                                <p class="mt-2 ">R{{produto.preco | currency}}</p>
 
-                                <button [routerLink]="['/editar', produto.id]" class="btn btn-outline-info border-0 mb-2 " id="botao">Adicionar a box</button>
+                                <button [routerLink]="[ '/editar', produto.id] " class="btn btn-outline-info border-0 mb-2 " id="botao ">Adicionar a box</button>
 
                             </div>
 

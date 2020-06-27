@@ -24,9 +24,12 @@ export class ProdutoService {
     return this.http.get('http://127.0.0.1:8080/produto')
   }
 
-  // findByIdCategoria(id:number){
-  //   return this.http.get(`http://localhost:8080/produto/categoria/${id}`)
-  // }
+  GetByName(nomeCategoria:string){
+    return this.http.get(`http://localhost:8080/produto/nomeCategoria/${nomeCategoria}`)
+  }
+  GetByIdCategoria(idCategoria:number){
+    return this.http.get(`http://localhost:8080/produto/categoria/${idCategoria}`)
+  }
 
 }
 

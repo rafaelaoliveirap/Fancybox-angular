@@ -1,63 +1,63 @@
 <div class="container-fluid">
 
-    <div class="modal fade"id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body">
-          
-               
-    
-                <div class="row">
-                  
-                    
-                    <div class="col-md-6 order-sm-2 p-3">
-                        <button type="button" class="close mr-2 btn-close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-content">
+                <div class="modal-body">
+
+
+
+                    <div class="row">
+
+
+                        <div class="col-md-6 order-sm-2 p-3">
+                            <button type="button" class="close mr-2 btn-close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>  
-                        <h4 class="text-center mb-5">Login</h4>
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Email:</label>
-                                <input type="email" class="form-control" placeholder="Digite seu email" required [(ngModel)]="login.email" name="email" />
-                            </div>
-    
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Senha:</label>
-                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite sua senha" required [(ngModel)]="login.senha" name="senha" />
-                            </div>
-                        </form>
-    
-    
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-lg btn-block mb-2 mx-auto btn-logar" (click)="logar()">
+                        </button>
+                            <h4 class="text-center mb-5">Login</h4>
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Email:</label>
+                                    <input type="email" class="form-control" placeholder="Digite seu email" required [(ngModel)]="login.email" name="email" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Senha:</label>
+                                    <input type="password" class="form-control" name="senha" id="senha" placeholder="Digite sua senha" required [(ngModel)]="login.senha" name="senha" />
+                                </div>
+                            </form>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-lg btn-block mb-2 mx-auto btn-logar" (click)="logar()">
                             Entrar
                              </button>
-                        </div>
-    
-                        
+                            </div>
+
+
                             <div class="col-12 text-center mb-4 color-black">
-                                <a routerLink="/cadastrar-usuarios"  data-dismiss="modal" aria-label="Close" aria-hidden="true">Ainda não tem cadastro?</a>
+                                <a routerLink="/cadastrar-usuarios" data-dismiss="modal" aria-label="Close" aria-hidden="true">Ainda não tem cadastro?</a>
                             </div>
                             <div class="col-12 text-center">
                                 <a href="">Esqueci minha senha</a>
                             </div>
-                               
-                            
-                       
+
+
+
+                        </div>
+
+                        <div class="col-md-6 order-sm-1 img-1 ">
+
+                            <img src="https://i.imgur.com/p4sUn5l.jpg" class="img-fluid" alt="Box">
+
+                        </div>
+
+
+
                     </div>
-                    
-                    <div class="col-md-6 order-sm-1 img-1 ">
-    
-                        <img src="https://i.imgur.com/p4sUn5l.jpg" class="img-fluid" alt="Box">
-    
-                    </div>
-    
-                    
-    
                 </div>
             </div>
-          </div>
         </div>
-      </div>
-   
+    </div>
+
 </div>

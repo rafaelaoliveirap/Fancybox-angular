@@ -1,15 +1,17 @@
 export class Produto{
-    private idProduto: number;
+	public idProduto: number;
 	
-	private nomeProduto: string;
+	public nomeCategoria: string;
 	
-	private descricao: string;
+	public nomeProduto: string;
 	
-	private marca: string;
+	public descricao: string;
 	
-	private preco: number;
+	public marca: string;
 	
-	private quantidade: number;
+	public preco: number;
 	
-	private imagem: string;
+	public quantidade: number;
+	
+	public imagem: string;
 }
