@@ -7,3 +7,6 @@ hr{
     padding: 0;
     margin: 0;
 }
+.container-fluid{
+    background-image: linear-gradient( to right, rgba(114, 169 ,241, 0.334) 30%, rgba(210, 226, 118, 0.334));
+}
