@@ -13,12 +13,13 @@ hr{
 }
 button{
     color: white;
-    background-color: rgba(228, 90, 90, 0.637);
-    border: 1px solid bisque;
+   background-color:rgba(228, 108, 108, 0.904);
+   border: 1px solid bisque;
 }
+
 button:hover{
-    color: white;
-    background-color:  rgb(228, 108, 108);
+
+   background-color: rgb(114, 169 ,241);
 }
 #formulario{
     background-color: white;

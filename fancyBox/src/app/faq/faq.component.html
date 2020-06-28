@@ -1,6 +1,10 @@
 <section class="container-fluid tituloFAQ mb-5">
 
-    <h2 class="d-flex justify-content-center text-black pt-5 pb-0">FAQ</h2>
+    <h2 class="pt-5 pb-2 text-black d-flex justify-content-center ">FAQ</h2>
+
+
+    <hr class="mx-auto col-9 col-md-4 col-lg-3">
+    <hr class="mx-auto col-9 col-md-4 col-lg-3">
     <hr class="mx-auto col-9 col-md-4 col-lg-3">
 
 
@@ -13,7 +17,7 @@
 
 
     <div class="card">
-        <div class="card-header fundoBranco" id="headingOne" [ngClass]="{'fundoVerde': janelaAberta1 == false} ">
+        <div class="card-header fundoBranco" id="headingOne" [ngClass]="{'fundoVerde': janelaAberta1 == true} ">
             <h2 class="mb-0" style="white-space: nowrap">
                 <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" (click)="abrirJanela1()">
                     <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseOne"></i>     COMO POSSO MONTAR A BOX ?</button>
@@ -127,21 +131,7 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="card">
-                <div class="card-header fundoBranco" id="headingSeven" [ngClass]="{'fundoVerde': janelaAberta7 == true} ">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" (click)="abrirJanela7()">
-                        POSSO MONTAR MINHA BOX DA MANEIRA QUE EU QUISER?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseSeven"></i>  </button>
-                    </h2>
-                </div>
-                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Sim, selecione os itens desejados e coloque no seu carrinho e quando finalizar a compra será colocado em uma box para entrega.
-
-                    </div>
-                </div>
-            </div> -->
+  
 
 
 </div>
@@ -157,22 +147,6 @@
 
     <div class=" responsividadeDesktop" id="accordionExample2">
 
-        <!-- 
-        <div class="card">
-            <div class="card-header fundoBranco" id="headingOne" [ngClass]="{'fundoVerde': janelaAberta1 == false} ">
-                <h2 class="mb-0">
-                    <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" (click)="abrirJanela1()">
-                        POSSO MONTAR MINHA BOX DA MANEIRA QUE EU QUISER?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseOne"></i>  </button>
-                </h2>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    Sim, selecione os itens desejados e coloque no seu carrinho e quando finalizar a compra será colocado em uma box para entrega.
-
-                </div>
-            </div>
-        </div> -->
-
         <div class="card">
             <div class="card-header fundoBranco" id="headingTwo2" [ngClass]="{'fundoVerde': janelaAberta2 == true} ">
                 <h2 class="mb-0">
@@ -187,7 +161,34 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header fundoBranco" id="heading" [ngClass]="{'fundoVerde': janelaAberta1 == true} ">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapseOne" (click)="abrirJanela1()">
+                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseTwo"></i>  POSSO MONTAR MINHA BOX DA MANEIRA QUE EU QUISER?  </button>
+                </h2>
+            </div>
+            <div id="collapse" class="collapse" aria-labelledby="heading" data-parent="#accordionExample1">
+                <div class="card-body">
+                    Sim, selecione os itens desejados e coloque em seu carrinho e quando finalizar a compra será colocado em uma box para entrega.
 
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card">
+            <div class="card-header fundoBranco" id="headingOne" [ngClass]="{'fundoVerde': janelaAberta1 == true} ">
+                <h2 class="mb-0">
+                    <button class="btn btn-link btn-block bt collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" (click)="abrirJanela1()">
+                        <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseOne1"></i>     </button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                   
+                </div>  
+            </div>
+        </div> -->
+                
 
         <div class="card">
             <div class="card-header fundoBranco" id="headingThree3" [ngClass]="{'fundoVerde': janelaAberta3 == true} ">
@@ -273,93 +274,7 @@
             </div>
         </div>
 
-        <!-- <div class="card">
-                <div class="card-header fundoBranco" id="headingSeven" [ngClass]="{'fundoVerde': janelaAberta7 == true} ">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" (click)="abrirJanela7()">
-                        POSSO MONTAR MINHA BOX DA MANEIRA QUE EU QUISER?  <i class="fa fa-plus btn btn-link  bt" data-toggle="collapse" data-target="#collapseSeven"></i>  </button>
-                    </h2>
-                </div>
-                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Sim, selecione os itens desejados e coloque no seu carrinho e quando finalizar a compra será colocado em uma box para entrega.
-
-                    </div>
-                </div>
-            </div> -->
-
-
     </div>
 </section>
 
 <!-- --------------------------------FIM DESKTOP ------------------------------------ -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-        
-               
-        
-        <div class="card ">
-            <div class=" faq card-header " id="headingTwo ">
-                <h2 class="mb-0 ">
-                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse "
-                        data-target="#collapseEight " aria-expanded="false " aria-controls="collapseEight ">
-                        POSSO MONTAR MINHA BOX DA MANEIRA QUE EU QUISER?
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseEight " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                <div class="card-body ">
-                    Sim, selecione o item desejado e coloque no seu carrinho e quando
-finalizar a compra será colocado em uma box para entrega
-                </div>
-            </div>
-        </div>
-        <div class="card ">
-            <div class=" faq card-header " id="headingTwo ">
-                <h2 class="mb-0 ">
-                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse "
-                        data-target="#collapseNine " aria-expanded="false " aria-controls="collapseNine ">
-                        CASO O PRODUTO SEJA EXTRAVIADO, QUEM SE RESPONSABILIZA?
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseNine " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                <div class="card-body ">
-                     Caso isso aconteça a empresa se responsabiliza e manda outra box sem
-                    taxas
-                </div>
-            </div>
-        </div>
-
-        <div class="card ">
-            <div class=" faq card-header " id="headingTwo ">
-                <h2 class="mb-0 ">
-                    <button class="btn btn-link collapsed " type="button " data-toggle="collapse "
-                        data-target="#collapseTen " aria-expanded="false " aria-controls="collapseTen ">
-                         ALGO DEU ERRADO, O QUE FAZER?
-                    </button>
-                </h2>
-            </div>
-            <div id="collapseTen " class="collapse " aria-labelledby="headingTwo " data-parent="#accordionExample ">
-                <div class="card-body ">
-                    Nesse caso basta mandar um ticket que iremos verificar o ocorrido, e em
-caso de troca mantenha o produto lacrado, após aberto não será possível
-realizarmos a troca.
-                </div>
-            </div>
-        </div>
-
-         </section> -->

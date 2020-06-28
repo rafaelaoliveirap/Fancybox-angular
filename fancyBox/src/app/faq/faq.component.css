@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+    
+ }
+hr {
+    background-color: rgb(228, 108, 108);
+    padding: 0;
+    margin: 0;
+}
 .card-header {
     width: 100%;
 }
@@ -5,10 +14,10 @@
 .faq {
     background-color: rgba(0, 0, 0, 0.041);
 }
-
-hr {
-    background-color: rgb(209, 59, 84);
+.btn{
+    height: 60px;
 }
+
 
 .card {
     border: none;

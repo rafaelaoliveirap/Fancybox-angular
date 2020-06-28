@@ -1,12 +1,17 @@
+<!-- LOGOTIPO E BANNER DESKTOP  -->
 <div class="logo">
     <img class="w-100" src="https://i.imgur.com/TzhiGgU.png" alt="" />
     <img class="w-100" src="https://i.imgur.com/sQKsgyO.png" alt="" />
 </div>
+
+<!-- LOGOTIPO E BANNER RESPONSIVO -->
 <div class="logoResponsivo">
     <img class="w-100" src="https://i.imgur.com/EvyU8tA.png" alt="" />
     <img class="w-100" src="https://i.imgur.com/MVOgiPo.png" alt="" />
 </div>
 
+
+<!-- PASSO A PASSO DA COMPRA E CHEGADA DO PRODUTO -->
 <div class="container-ls m-5">
     <div class="row">
         <div class="col col-md-6 col-lg-3 d-flex justify-content-around">
@@ -57,12 +62,20 @@
         </div>
     </div>
 </div>
+<!-- 
+PARALLAX DESKTOP -->
 <div class="container-ls">
     <div class="parallax1 mt-5"></div>
 </div>
+
+<!-- PARALLAX MOBILE RESPONSIVO -->
 <div class="container-ls">
     <div class="parallax1Responsivo"></div>
 </div>
+
+
+<!-- DEPOIMENTOS - CARROSSEL DESKTOP   -->
+
 <div class="container-ls">
     <div id="carouselExampleControls" class="carousel slide tamanhoCarousel" data-ride="carousel">
         <div class="carousel-inner">
@@ -90,88 +103,65 @@
     </div>
 </div>
 
-<!-- //AS SETAS SERÃO ARRUMADAS AMANHÃ DIA 27/06, NÃO CONSEGUI COLOCAR NA MESMA ROW, POREM AMANHÃ TEREI UM HELP
-//AS SETAS SERÃO ARRUMADAS AMANHÃ DIA 27/06, NÃO CONSEGUI COLOCAR NA MESMA ROW, POREM AMANHÃ TEREI UM HELP
-//AS SETAS SERÃO ARRUMADAS AMANHÃ DIA 27/06, NÃO CONSEGUI COLOCAR NA MESMA ROW, POREM AMANHÃ TEREI UM HELP
-//AS SETAS SERÃO ARRUMADAS AMANHÃ DIA 27/06, NÃO CONSEGUI COLOCAR NA MESMA ROW, POREM AMANHÃ TEREI UM HELP -->
-<div id="carouselExampleControls" class="carousel slide carouselResponsivo m-5" data-ride="carousel">
-    <h2 class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">DEPOIMENTOS</h2>
+
+<!-- DEPOIMENTOS - CARROSSEL MOBILE -->
+
+<div id="carouselExampleIndicators" class="carousel carouselResponsivo  slide m-5 my-5" data-ride="carousel">
+    <h2 class="text-center font-weight-bold mb-3" style="color: rgb(114, 169 ,241);">DEPOIMENTOS</h2>
     <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="1000">
-            <p>
-                A Facybox mudou a minha vida, não preciso me preocupar e estou sempre preparada! #byeCólica #xôPreocupações
-            </p>
-            <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Ariane Miranda</p>
-          <div class="row ">
-              <div class="col-md-6 ">
-                  
-                <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x px-2 "></fa-icon> 
-               
-              </div>
-              <div class="col-md-6 ">
-                <fa-icon [icon]="faArrowRight" class="SetaResponsiva fa-1x px-2 d-flex justify-content-end" ></fa-icon>
-              </div>
-          </div>
-        </div>
-        <div class="carousel-item " data-interval="1000">
-            <p>
-                Conheci a Fancybox há um pouco mais de um ano, sempre me salvou em meio a correria, agora com o covid-19 esta me ajudando ainda mais, tenho todos os produtos que preciso sem precisar sair de casa! ❤
-            </p>
-            <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Marcia Nogueira</p>
-            <div class="row">
-                <div class="col-md-6">
-                  <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x px-2 "></fa-icon>
-                  
-                </div>
-                <div class="col-md-6">
-                  <fa-icon [icon]="faArrowRight" class="SetaResponsiva fa-1x px-2 d-flex justify-content-end" ></fa-icon>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item" data-interval="1000">
-            <p>
-                Super recomendo e sempre espalho para as minhas amigas a facilidade que é montar sua box e receber na comodidade de sua casa tudo o que precisa, com segurança e uma caixa linda. Faço questão de manter meu cadastro renovado!
-            </p>
-            <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Bruna Mika</p>
-            <div class="row">
-                <div class="col-md-6">
-                  <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x px-2 "></fa-icon>
-                  
-                </div>
-                <div class="col-md-6">
-                  <fa-icon [icon]="faArrowRight" class="SetaResponsiva fa-1x px-2 d-flex justify-content-end" ></fa-icon>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item" data-interval="1000">
+      <div class="carousel-item active">
+        <p>
+            A Facybox mudou a minha vida, não preciso me preocupar e estou sempre preparada! #byeCólica #xôPreocupações
+        </p>
+        <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Ariane Miranda</p>
+        <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x  "></fa-icon> 
+        <fa-icon [icon]="faArrowRight" class="SetaResponsivaDireita fa-1x " ></fa-icon>
+      </div>
 
-            <p>A FancyBox há 2 anos e desde então não precisei mais me preocupar !! #Amei #FancyBox
-            </p>
-            <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Luciana Vieira</p>
-            <div class="row">
-                <div class="col-md-6">
-                  <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x px-2 "></fa-icon>
-                  
-                </div>
-                <div class="col-md-6">
-                  <fa-icon [icon]="faArrowRight" class="SetaResponsiva fa-1x px-2 d-flex justify-content-end" ></fa-icon>
-                </div>
-            </div>
-        </div>
+      <div class="carousel-item">
+        <p>
+            Conheci a Fancybox há um pouco mais de um ano, sempre me salvou em meio a correria, agora com o covid-19 esta me ajudando ainda mais, tenho todos os produtos que preciso sem precisar sair de casa! ❤
+        </p>
+        <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Marcia Nogueira</p>
+        <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x  "></fa-icon> 
+        <fa-icon [icon]="faArrowRight" class="SetaResponsivaDireita fa-1x " ></fa-icon>
+      </div>
+
+      <div class="carousel-item">
+        <p>
+            Super recomendo e sempre espalho para as minhas amigas a facilidade que é montar sua box e receber na comodidade de sua casa tudo o que precisa, com segurança e uma caixa linda. Faço questão de manter meu cadastro renovado!
+        </p>
+        <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Bruna Mika</p>
+        <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x  "></fa-icon> 
+        <fa-icon [icon]="faArrowRight" class="SetaResponsivaDireita fa-1x " ></fa-icon>
+      </div>
+
+      <div class="carousel-item">
+        <p>A FancyBox há 2 anos e desde então não precisei mais me preocupar !! #Amei #FancyBox
+        </p>
+        <p class="text-center font-weight-bold" style="color: rgb(114, 169 ,241);">Luciana Vieira</p>
+        <fa-icon [icon]="faArrowLeft" class="SetaResponsiva fa-1x  "></fa-icon> 
+        <fa-icon [icon]="faArrowRight" class="SetaResponsivaDireita fa-1x " ></fa-icon>
+      </div>
+
+    
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
     </a>
-</div>
+  </div>
 
+  <!-- PARALLAX DESKTOP -->
 <div class="container-ls">
     <div class="parallax2"></div>
 </div>
+
+<!-- PARALLAX MOBILE RESPONSIVO  -->
 <div class="container-ls">
     <div class="parallax2Responsivo"></div>
 </div>

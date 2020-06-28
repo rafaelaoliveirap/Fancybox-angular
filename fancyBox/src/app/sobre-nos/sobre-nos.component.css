@@ -65,6 +65,7 @@
         color: white;
         list-style-type: none;
     }
+ 
     
     @media (max-width: 700px) {
         .desktop {
