@@ -12,9 +12,27 @@
 
 }
 .modal-content{
-    height: 90vh;
+    height: 100vh;
+
+    background-image: linear-gradient( to right, rgba(114, 169 ,241, 0.434) 25%, rgba(210, 226, 118, 0.434), rgba(228, 108, 108, 0.434) );
+
 }
 .modal-header{
     background-color:  rgb(114, 169, 241);
     color: white;
+}
+.modal-dialog{
+    position: fixed;
+    right: 0px;
+    height: 100%; 
+    margin-top:0;
+    width: 30%;
+}
+
+.card{
+    height: 100vh;
+}
+.modal-body{
+    margin: 0;
+    padding: 0;
 }
