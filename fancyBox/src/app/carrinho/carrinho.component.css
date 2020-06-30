@@ -1,38 +1,40 @@
-.btn-finalizar{
+.btn-finalizar {
     background-color: rgb(228, 108, 108);
     color: white;
 }
-.card{
+
+.card {
     border: none;
     padding: 0;
-    
 }
-.descricao{
+
+.descricao {
     font-size: 13px;
-
 }
-.modal-content{
+
+.modal-content {
     height: 100vh;
-
-    background-image: linear-gradient( to right, rgba(114, 169 ,241, 0.434) 25%, rgba(210, 226, 118, 0.434), rgba(228, 108, 108, 0.434) );
-
+    background-image: linear-gradient( to right, rgba(114, 169, 241, 0.434) 25%, rgba(210, 226, 118, 0.434), rgba(228, 108, 108, 0.434));
 }
-.modal-header{
-    background-color:  rgb(114, 169, 241);
+
+.modal-header {
+    background-color: rgb(114, 169, 241);
     color: white;
 }
-.modal-dialog{
+
+.modal-dialog {
     position: fixed;
     right: 0px;
-    height: 100%; 
-    margin-top:0;
+    height: 100%;
+    margin-top: 0;
     width: 30%;
 }
 
-.card{
-    height: 100vh;
+.card {
+    height: 12vh;
 }
-.modal-body{
+
+*/ .modal-body {
     margin: 0;
     padding: 0;
 }

@@ -16,7 +16,7 @@
 
                     <ul class="main-categories list-unstyled">
                         <ng-container *ngFor="let categoria of listaCategorias">
-                            <li class="main-nav-list " (click)="setarCategoriaNaUrl(categoria.idCategoria)">{{categoria.nomeCategoria}}</li>
+                            <li class="main-nav-list " (click)="setarCategoriaNaUrl(categoria.idCategoria)"><a class="btn btn-outline-light">{{categoria.nomeCategoria}}</a></li>
                         </ng-container>
 
                     </ul>
@@ -24,17 +24,7 @@
             </div>
 
             <div class="col-xl-9 col-lg-8 col-md-8 mt-5 ">
-                <!-- Start Filter Bar -->
-                <!-- <div class="btn btn filter-bar d-flex flex-wrap align-items-center " style="border: none; ">
-                    <div class=" mr-auto ">
-                        <select>
-                       <option value="1 ">RELEVÂNCIA</option>
-                        <option value="1 ">MAIOR PREÇO</option>
-                        <option value="1 ">MENOR PREÇO</option>							
-                    </select>
-                    </div>
-                </div> -->
-                <!-- End Filter Bar -->
+
 
                 <!-- Start Best Seller -->
                 <section class="lattest-product-area pb-40 category-list ">
@@ -56,7 +46,7 @@
                                 <small class="font-weight-bold ">{{produto.descricao}}</small>
                                 <p class="mt-2 ">R{{produto.preco | currency}}</p>
 
-                                <button [routerLink]="[ '/editar', produto.id] " class="btn btn-outline-info border-0 mb-2 " id="botao ">Adicionar a box</button>
+                                <button [routerLink]="[ '/editar', produto.id] " class="btn btn-outline-info border-0 mb-2 " id="botao " (click)="adicionarAoCarrinho(produto)">Adicionar a box</button>
 
                             </div>
 

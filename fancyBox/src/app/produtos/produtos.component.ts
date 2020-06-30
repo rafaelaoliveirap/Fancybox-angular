@@ -5,6 +5,8 @@ import { Categoria } from '../model/categoria';
 import { CategoriaService } from '../service/categoria.service';
 import { ThrowStmt } from '@angular/compiler';
 import { Router, ActivatedRoute } from '@angular/router';
+import { CarrinhoService } from '../service/carrinho.service';
+import { Carrinho } from '../model/carrinho';
 
 @Component({
   selector: 'app-produtos',
@@ -29,6 +31,7 @@ export class ProdutosComponent implements OnInit {
     private router: Router, 
     private _activeRoute: ActivatedRoute,
     private categoriasService: CategoriaService,
+    private carrinhoService: CarrinhoService
   ) 
   { 
     this.categoriasService.getAllCategorias().subscribe(resp=> this.listaCategorias = resp);
@@ -86,6 +89,11 @@ export class ProdutosComponent implements OnInit {
     this.router.navigate(['/produtos']);
   }
   
+  //Adicionar item no carrinho
+  adicionarAoCarrinho(produto: Produto) {
+    const carrinho = new Carrinho(produto)
+    this.carrinhoService.adicionarItemCarrinho(carrinho)
+  }
   
 }
 
