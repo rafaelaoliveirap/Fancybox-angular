@@ -4,6 +4,7 @@ import { Carrinho } from '../model/carrinho';
 import { Scroll } from '@angular/router';
 import { Subject } from 'rxjs';
 
+
 @Component({
   selector: 'app-carrinho',
   templateUrl: './carrinho.component.html',
@@ -19,7 +20,11 @@ export class CarrinhoComponent implements OnInit {
 
   qtdTotal: number = 0
 
+  exibirAlerta: boolean =false
+
   constructor(private carrinhoService: CarrinhoService) { }
+
+  
 
   ngOnInit(): void {
     this.totalCarrinho();
@@ -47,4 +52,9 @@ export class CarrinhoComponent implements OnInit {
   remover(carrinho: Carrinho) {
     this.carrinhoService.remover(carrinho)
   }
+
+  // exibirMesangem(){
+  //   this.exibirAlerta=true
+    
+  // }
 }

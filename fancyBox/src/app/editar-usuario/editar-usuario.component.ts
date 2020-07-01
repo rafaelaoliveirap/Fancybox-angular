@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../model/usuario';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UsuarioService } from '../service/usuario.service';
+import { CarrinhoComponent } from '../carrinho/carrinho.component';
 
 
 @Component({
@@ -12,6 +13,7 @@ import { UsuarioService } from '../service/usuario.service';
 })
 export class EditarUsuarioComponent implements OnInit {
   usuario : Usuario = new Usuario
+
 
   data = {
     senha: '',
