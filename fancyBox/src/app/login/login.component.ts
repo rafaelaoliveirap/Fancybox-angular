@@ -28,7 +28,7 @@ logar(){
     this.login = resp;
     localStorage.setItem('token', this.login.token);
     localStorage.setItem('nome', this.login.nome);
-    this.router.navigate(['produtos']);
+    location.assign('/produtos')
   }, err => {
     alert('Houve um erro ao entrar, verifique o e-mail e a senha');
   });

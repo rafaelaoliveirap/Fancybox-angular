@@ -61,7 +61,7 @@
 }
 .SetaResponsivaDireita{
     color: rgb(114, 169, 241);
-    margin-left: 90%;
+    margin-left: 80%;
 }
 @media (max-width: 856px) {
     .tamanho {
