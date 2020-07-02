@@ -22,6 +22,8 @@
             <div class="row d-flex justify-content-center ">
 
                 <div class="col-10 col-md-6 col-lg-8  py-5 shadow mb-5 " id="formulario">
+                    
+                    <form [formGroup]="formularioDeDoacao">
 
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Instituições</label>
@@ -34,35 +36,44 @@
 
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Valor</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite o valor">
+                        <input type="number"  class="form-control"  id="exampleFormControlInput1" placeholder="Digite o valor" >
                     </div>
 
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Email:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+<<<<<<< HEAD
+                        <input type="email" formControlName="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email" required minlength="9" maxlength="100">
+                        <div *ngIf="!email.valid && email.touched" class="alert alert-danger" role="alert">O campo email deve ter entre 9 e 100 caracteres.</div>
+=======
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email" required>
+>>>>>>> c44528deaf7ba6850e423df816a77074d40fbb70
                     </div>
 
 
 
                     <div class=" d-flex justify-content-end">
-                        <button type=" submit " class="btn  mt-2  mr-2"><a aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="mensagem()">Enviar Email </a>
+<<<<<<< HEAD
+                        <button [disabled]="!formularioDeDoacao.valid" type=" submit " class="btn  mt-2  mr-2"><a aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="mensagem()">Enviar Email </a>
+=======
+                        <button type=" submit " class="btn  mt-2  mr-2"><a aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="enviarAlerta()">Enviar Email </a>
+>>>>>>> c44528deaf7ba6850e423df816a77074d40fbb70
                         </button>
- 
+
                     </div>
 
-
+                </form>
                 </div>
 
             </div>
 
-            <div class="alert alert-info" role="alert" data-toggle="modal" data-target="#exampleModal" *ngIf="alerta == true">
+            <div data-toggle="modal" data-target="#exampleModal" *ngIf="alerta">
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog ">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Obrigadx pela doação!</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="resetar()">
                             <span aria-hidden="true">&times;</span>
                           </button>
                             </div>
@@ -96,6 +107,3 @@
         </div>
     </div>
 </section>
-<div *ngIf="mostrarLogin">
-    <app-login></app-login>
-</div>

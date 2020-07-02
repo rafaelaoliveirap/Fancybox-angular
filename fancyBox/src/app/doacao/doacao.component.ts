@@ -3,6 +3,9 @@ import { Ong } from './../model/ong';
 import { Component, OnInit } from '@angular/core';
 import { faBarcode } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-doacao',
@@ -11,9 +14,9 @@ import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 })
 export class DoacaoComponent implements OnInit {
  
-
+  formularioDeDoacao: FormGroup;
   ong: Ong = new Ong;
-  
+   
   listaOng: Ong[]
 
   mostrarLogin: boolean=false;
@@ -23,28 +26,46 @@ export class DoacaoComponent implements OnInit {
 
   alerta: boolean = false;
 
-  constructor(private ongService: OngService) { }
+  constructor(private ongService: OngService, private fb: FormBuilder) { }
 
   ngOnInit() {
     this.findAllOngs();
+    this.ValidaFormularioDeDoacao();
+    this.enviarAlerta();
+
   }
-  exibirLogin(){
-    this.mostrarLogin=true;
-  }
+
   findAllOngs(){
     this.ongService.getAllOngs().subscribe((resp: Ong[])=>{
       this.listaOng = resp
-    })
+
+  })
+  }
+
+  enviarAlerta(){
+    this.mensagem();
+  
   }
 
   mensagem(){
 
-    if(this.alerta = true){
-      this.alerta
+      this.alerta=true
+  }
 
-    }
+
+  ValidaFormularioDeDoacao(){
+    this.formularioDeDoacao = this.fb.group({
+    email: ['', Validators.compose([Validators.email, Validators.minLength(9), Validators.maxLength(100), Validators.required])]
+    })
+  }
+  get email() {
+    return this.formularioDeDoacao.get('email');
   }
 
   
-  
+
+  resetar() {
+  location.assign('/doacao')
+ 
+  }
 }
