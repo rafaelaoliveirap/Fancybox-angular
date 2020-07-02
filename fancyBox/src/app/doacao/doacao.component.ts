@@ -4,6 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { faBarcode } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 
+
+
 @Component({
   selector: 'app-doacao',
   templateUrl: './doacao.component.html',
@@ -13,7 +15,7 @@ export class DoacaoComponent implements OnInit {
  
 
   ong: Ong = new Ong;
-  
+   
   listaOng: Ong[]
 
   mostrarLogin: boolean=false;
@@ -27,24 +29,28 @@ export class DoacaoComponent implements OnInit {
 
   ngOnInit() {
     this.findAllOngs();
+    this.enviarAlerta();
   }
-  exibirLogin(){
-    this.mostrarLogin=true;
-  }
+
   findAllOngs(){
     this.ongService.getAllOngs().subscribe((resp: Ong[])=>{
       this.listaOng = resp
-    })
+
+  })
+  }
+
+  enviarAlerta(){
+    this.mensagem();
+  
   }
 
   mensagem(){
 
-    if(this.alerta = true){
-      this.alerta
-
-    }
+      this.alerta=true
   }
 
-  
-  
+  resetar() {
+  location.assign('/doacao')
+ 
+  }
 }

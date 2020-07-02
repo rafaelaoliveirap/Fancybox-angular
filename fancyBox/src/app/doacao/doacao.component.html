@@ -39,15 +39,15 @@
 
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Email:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email" required>
                     </div>
 
 
 
                     <div class=" d-flex justify-content-end">
-                        <button type=" submit " class="btn  mt-2  mr-2"><a aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="mensagem()">Enviar Email </a>
+                        <button type=" submit " class="btn  mt-2  mr-2"><a aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="enviarAlerta()">Enviar Email </a>
                         </button>
- 
+
                     </div>
 
 
@@ -55,14 +55,14 @@
 
             </div>
 
-            <div class="alert alert-info" role="alert" data-toggle="modal" data-target="#exampleModal" *ngIf="alerta == true">
+            <div data-toggle="modal" data-target="#exampleModal" *ngIf="alerta">
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog ">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Obrigadx pela doação!</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="resetar()">
                             <span aria-hidden="true">&times;</span>
                           </button>
                             </div>
@@ -96,6 +96,3 @@
         </div>
     </div>
 </section>
-<div *ngIf="mostrarLogin">
-    <app-login></app-login>
-</div>
