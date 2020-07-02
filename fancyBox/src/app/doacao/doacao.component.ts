@@ -5,6 +5,8 @@ import { faBarcode } from '@fortawesome/free-solid-svg-icons'
 import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
+
+
 @Component({
   selector: 'app-doacao',
   templateUrl: './doacao.component.html',
@@ -14,7 +16,7 @@ export class DoacaoComponent implements OnInit {
  
   formularioDeDoacao: FormGroup;
   ong: Ong = new Ong;
-  
+   
   listaOng: Ong[]
 
   mostrarLogin: boolean=false;
@@ -29,23 +31,27 @@ export class DoacaoComponent implements OnInit {
   ngOnInit() {
     this.findAllOngs();
     this.ValidaFormularioDeDoacao();
+    this.enviarAlerta();
+
   }
-  exibirLogin(){
-    this.mostrarLogin=true;
-  }
+
   findAllOngs(){
     this.ongService.getAllOngs().subscribe((resp: Ong[])=>{
       this.listaOng = resp
-    })
+
+  })
+  }
+
+  enviarAlerta(){
+    this.mensagem();
+  
   }
 
   mensagem(){
 
-    if(this.alerta = true){
-      this.alerta
-
-    }
+      this.alerta=true
   }
+
 
   ValidaFormularioDeDoacao(){
     this.formularioDeDoacao = this.fb.group({
@@ -57,4 +63,9 @@ export class DoacaoComponent implements OnInit {
   }
 
   
+
+  resetar() {
+  location.assign('/doacao')
+ 
+  }
 }
