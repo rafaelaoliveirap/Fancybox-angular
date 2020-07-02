@@ -1,17 +1,15 @@
-<div class="container-fluid carrinho">
 
     <div class="container-fluid carrinho">
 
-
-
-        <div class=" modal fade " id="carrinho-modal" tabindex="-1" role="dialog" aria-labelledby="carrinho-modal" aria-hidden="true">
-            <div class="modal-dialog ">
+        <div class=" modal fade " id="carrinho-modal" tabindex="-1" role="dialog" aria-labelledby="carrinho-modal " aria-hidden="true">
+            <!-- -------------------------------------------DESKTOP----------------------------------- -->
+            <div class="modal-dialog desktop">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5>Carrinho de Compras</h5>
                         <button type="button" class="close mr-2 btn-close" data-dismiss="modal" aria-label="Close">
-                    <i class="fas fa-times"></i>
-                  </button>
+                            <i class="fas fa-times"></i>
+                        </button>
                     </div>
                     <div class="modal-body " style="overflow: auto">
                         <div class="card ">
@@ -23,22 +21,14 @@
                                     <div class="row">
                                         <div class="col-8">
                                             <h5 class="">{{item.nomeProduto}}</h5>
-
                                             <p class="card-text descricao ">{{item.descricao}}</p>
                                         </div>
                                         <div class="col-4 p-0">
-
                                             <div class="text-center">
                                                 <a class="btn" (click)="diminuirQuantidade(item) "><i  class="fas fa-caret-down" title="Diminuir a quantidade" ></i></a> {{item.quantidade}}
                                                 <a class="btn" (click)="adicionarQuantidade(item) "><i class="fas fa-caret-up" title="Aumentar a quantidade"></i></a>
                                             </div>
-
-
-
-
-
                                         </div>
-
                                     </div>
 
                                     <div class="row d-flex justify-content-around">
@@ -46,21 +36,69 @@
                                             <p class="card-text">R{{item.preco | currency}}</p>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <a class="btn excluir" title="Remover item" (click)="remover(item)">Excluir</a>
+                                            <button class="btn excluir" title="Remover item" (click)="remover(item)">Excluir                                               
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
                         </div>
-
-
-
-
+                   </div>
+                    <div class="row mt-3">
+                        <div class="col text-left ml-3">
+                            <p>Total:</p>
+                        </div>
+                        <div class="col text-right mr-3">
+                            <p>R{{ totalDoCarrinho | currency }}</p>
+                        </div>
                     </div>
+                    <div class="row d-flex justify-content-center mb-2 mt-2 footer">
+                        <button class=" btn btn-lg btn-finalizar w-75" data-toggle="modal" data-target="#exampleModal">Finalizar Box</button>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------------MOBILE----------------------------------- -->
+            <div class="modal-dialog modal-dialog-centered mobile">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Carrinho de Compras</h5>
+                        <button type="button" class="close mr-2 btn-close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body " style="overflow: auto">
+                        <div class="card ">
+                            <div class="row  mt-2 mr-2" *ngFor=" let item of carrinho ">
+                                <div class="col-4">
+                                    <img src="{{item.imagem}}" class="img-fluid" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 class="">{{item.nomeProduto}}</h5>
+                                            <p class="card-text descricao ">{{item.descricao}}</p>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="text-center">
+                                                <a class="btn" (click)="diminuirQuantidade(item) "><i  class="fas fa-caret-down" title="Diminuir a quantidade" ></i></a> {{item.quantidade}}
+                                                <a class="btn" (click)="adicionarQuantidade(item) "><i class="fas fa-caret-up" title="Aumentar a quantidade"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row d-flex justify-content-around">
+                                        <div class="col-6">
+                                            <p class="card-text">R{{item.preco | currency}}</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a class="btn excluir" title="Remover item" (click)="remover(item)">Excluir                                               
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
                     <div class="row mt-3">
                         <div class="col text-left ml-3">
                             <p>Total:</p>
@@ -75,64 +113,70 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
-    <!-- <div *ngIf='exibirAlerta'>
+    <!-- ----------------------------------------INICIO MOBILE----------------------------------------------->
 
+    <!-- <div class="container-fluid carrinho mobile">
 
-        Button trigger modal -->
-
-    <!-- Modal -->
-    <!-- <div class="modal fade d-flex justify-content-center" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-            <div class="modal-dialog" style="position: relative;
-            width: auto;
-            margin: 0.5rem;
-            height: 20%;
-            pointer-events: none;">
-
-                <div class="modal-content" style="position: relative;
-                display: -ms-flexbox;
-                display: flex;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                width: 100%;
-                height: 20vh;
-               pointer-events: auto;
-                background-color: #fff;
-                background-clip: padding-box;
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                border-radius: 0.3rem;
-                outline: 0;">
-
-                    <div class="modal-header" style=" display: -ms-flexbox;
-                    display: flex;
-                    -ms-flex-align: start;
-                    align-items: flex-start;
-                    -ms-flex-pack: justify;
-                    justify-content: space-between;
-                    padding: 1rem 1rem;
-                    border-bottom: 1px solid #dee2e6;
-                    border-top-left-radius: calc(0.3rem - 1px);
-                    border-top-right-radius: calc(0.3rem - 1px);">
-
-                        <h5 class="modal-title text-center" style=" margin-bottom: 0; line-height: 1.5; " id="exampleModalLabel ">Compra efetuada com Sucesso</h5>
-                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
-                <span aria-hidden="true ">&times;</span>
-              </button>
+        <div class=" modal fade  " id="carrinho-modal" tabindex="-1" role="dialog" aria-labelledby="carrinho-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Carrinho de Compras</h5>
+                        <button type="button" class="close mr-2 btn-close" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
                     </div>
-                    <div class="modal-body text-center " style=" position: relative; -ms-flex: 1 1 auto; font-size: 16px; flex: 1 1 auto; padding: 1rem; ">
-                        Obrigado pela compra, Volte Sempre.
+                    <div class="modal-body " style="overflow: auto">
+                        <div class="card ">
+                            <div class="row  mt-2 mr-2" *ngFor=" let item of carrinho ">
+                                <div class="col-4">
+                                    <img src="{{item.imagem}}" class="img-fluid" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <h5 class="">{{item.nomeProduto}}</h5>
+                                            <p class="card-text descricao ">{{item.descricao}}</p>
+                                        </div>
+                                        <div class="col-4 p-0">
+                                            <div class="text-center">
+                                                <a class="btn" (click)="diminuirQuantidade(item) "><i  class="fas fa-caret-down" title="Diminuir a quantidade" ></i></a> {{item.quantidade}}
+                                                <a class="btn" (click)="adicionarQuantidade(item) "><i class="fas fa-caret-up" title="Aumentar a quantidade"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row d-flex justify-content-around">
+                                        <div class="col-6">
+                                            <p class="card-text">R{{item.preco | currency}}</p>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <a class="btn excluir" title="Remover item" (click)="remover(item)">Excluir                                               
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                    <div class="row mt-3">
+                        <div class="col text-left ml-3">
+                            <p>Total:</p>
+                        </div>
+                        <div class="col text-right mr-3">
+                            <p>R{{ totalDoCarrinho | currency }}</p>
+                        </div>
                     </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
+                    <div class="row d-flex justify-content-center mb-2 mt-2 footer">
+                        <button class=" btn btn-lg btn-finalizar w-75" data-toggle="modal" data-target="#exampleModal">Finalizar Box</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>  -->
+    </div> -->
+
+
+
+    
