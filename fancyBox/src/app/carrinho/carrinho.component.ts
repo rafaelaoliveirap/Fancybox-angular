@@ -53,8 +53,9 @@ export class CarrinhoComponent implements OnInit {
     this.carrinhoService.remover(carrinho)
   }
 
-  // exibirMesangem(){
-  //   this.exibirAlerta=true
+exibirMensagem(){
+    alert("Compra realizada com sucesso!")
+    location.assign('/home')
     
-  // }
+  }
 }
