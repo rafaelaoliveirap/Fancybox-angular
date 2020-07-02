@@ -22,6 +22,8 @@
             <div class="row d-flex justify-content-center ">
 
                 <div class="col-10 col-md-6 col-lg-8  py-5 shadow mb-5 " id="formulario">
+                    
+                    <form [formGroup]="formularioDeDoacao">
 
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Instituições</label>
@@ -34,23 +36,24 @@
 
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Valor</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Digite o valor">
+                        <input type="number"  class="form-control"  id="exampleFormControlInput1" placeholder="Digite o valor" >
                     </div>
 
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Email:</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+                        <input type="email" formControlName="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email" required minlength="9" maxlength="100">
+                        <div *ngIf="!email.valid && email.touched" class="alert alert-danger" role="alert">O campo email deve ter entre 9 e 100 caracteres.</div>
                     </div>
 
 
 
                     <div class=" d-flex justify-content-end">
-                        <button type=" submit " class="btn  mt-2  mr-2"><a aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="mensagem()">Enviar Email </a>
+                        <button [disabled]="!formularioDeDoacao.valid" type=" submit " class="btn  mt-2  mr-2"><a aria-disabled="true" data-toggle="modal" data-target="#exampleModal" (click)="mensagem()">Enviar Email </a>
                         </button>
  
                     </div>
 
-
+                </form>
                 </div>
 
             </div>
