@@ -13,15 +13,11 @@ export class LoginComponent implements OnInit {
 
   login: Login = new Login;
 
-
-
-
   constructor(private authService: AuthService, private router:Router) {} 
 
   ngOnInit(){
    
   }
-
  
 logar(){
   this.authService.logar(this.login).subscribe((resp: Login) => {
@@ -32,6 +28,9 @@ logar(){
   }, err => {
     alert('Houve um erro ao entrar, verifique o e-mail e a senha');
   });
+}
+alertaSenha(){
+  alert ("Um link para recuperação de senha foi enviado ao seu e-mail!")
 }
 }
 
